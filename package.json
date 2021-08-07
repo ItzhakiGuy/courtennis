@@ -1,0 +1,23 @@
+{
+  "name": "courtennis",
+  "version": "1.0.0",
+  "description": "online tennis store",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maor1910/courtennis.git"
+  },
+  "author": "Maor Graiber & Guy Itzhaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maor1910/courtennis/issues"
+  },
+  "homepage": "https://github.com/maor1910/courtennis#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^16.6.1"
+  }
+}
