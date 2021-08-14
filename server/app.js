@@ -1,27 +1,36 @@
-const express =      require('express');
-const app =          express();
-const bodyParser =   require("body-parser");
-const mongoose =     require("mongoose");
-const cors =         require("cors");
-const tennis =       require("./routes/tennis.js");
+// const express =      require('express');
+// const app =          express();
+// // const bodyParser =   require("body-parser"); // Deprecated
+// const mongoose =     require("mongoose");
+// const cors =         require("cors");
+// const tennis =       require("./routes/tennis.js");
+
+
 // const commentsRoutes =        require("./routes/comments");
 // const authRoutes =            require("./routes/auth");
 
-/*
-    import express from 'express'
-    import bodyParser from 'body-parser'
-    import mongoose from 'mongoose'
-    import cors from 'cors'
-*/
-app.use(cors());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json({extended: true}));
+// ES6 Support
+import express from 'express'
+import mongoose from 'mongoose'
+import cors from 'cors'
+import tennis from "./routes/tennis.js";
 
+const app = express();
+
+app.use(express.urlencoded({extended: true}));
+app.use(express.json({extended: true}));
+app.use(cors());
+
+
+// Check if port is legit?
 const port =         3000;
 const CONNECTION_URL = "mongodb+srv://maor:Michael1995@courtennis.vptz3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
+// think this is better
+// const port = process.env.PORT || 5000;
+
 //REQUIRING ROUTES
-app.use(tennis);
+app.use('/tennis', tennis);
 
 mongoose.connect(CONNECTION_URL, {
   useNewUrlParser: true,
