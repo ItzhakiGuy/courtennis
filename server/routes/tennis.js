@@ -7,13 +7,12 @@
 //const Comment = require("../models/comment");
 //const middleware = require("../middleware/index.js");
 
-// Guy Changes
 import express from 'express';
-import { getTennis } from '../controllers/tennis.js';
 const router  = express.Router();
+import { getTennis } from '../controllers/tennis.js';
+import middlewareObj from '../middleware/index.js';
 
 //INDEX page
-router.get('/tennis',getTennis);
+router.get('/tennis',middlewareObj.isLoggedIn, getTennis);
 
-// module.exports = router;
 export default router;
