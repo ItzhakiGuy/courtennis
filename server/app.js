@@ -34,11 +34,11 @@ app.use(function(req, res, next){
     next();
 });
 
-passport.use(new localStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+// passport.use(new localStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
 
-const CONNECTION_URL = "mongodb+srv://maor:Michael1995@courtennis.vptz3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://maor:Michael1995@cluster0.lwknm.mongodb.net/courtennis?retryWrites=true&w=majority";
 
 //REQUIRING ROUTES
 app.use(tennis);

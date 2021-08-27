@@ -6,6 +6,6 @@ let userSchema = new mongoose.Schema({
     password: String
 });
 
-userSchema.plugin(passportLocalMongoose);
+// userSchema.plugin(passportLocalMongoose);
 const User = mongoose.model("User", userSchema);
 export default User;
