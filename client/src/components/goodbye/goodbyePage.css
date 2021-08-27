@@ -1,0 +1,40 @@
+.goodbye-container {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.goodbye-container h1{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+}
+
+.goodbye-message {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	color: #575757;
+}
+
+.back-to-store-button {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	color: white;
+	height: 60px;
+	width: 300px;
+	background-color: #ECBDC4;
+}
+
+.back-to-store-button:hover {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	color: white;
+	background-color: #FFF1F5;
+}
+
+* {
+	-ms-overflow-style: none;
+}

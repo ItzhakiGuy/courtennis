@@ -1,0 +1,41 @@
+.store-logo {
+	width: 100px;
+	margin-left: 150px;
+}
+
+.navigation-logo {
+	margin-right: 5px;
+}
+
+.navigation-links li:hover {
+	transform: scale(1.1);
+}
+
+.navigation-links li:active {
+	transform: scale(1);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 10px;
+	background-color: #C28285;
+}
+
+a {
+	color: #ffffff;
+}
+
+.navigation-logo.store-logo {
+	height: 40px;
+	width: 40px;
+}
+
+.navigation-links {
+	display: flex;
+	color: white;
+	width: 70%;
+	justify-content: space-around;
+	align-items: center;
+}

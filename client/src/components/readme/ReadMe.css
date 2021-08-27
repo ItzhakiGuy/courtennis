@@ -1,0 +1,22 @@
+.readme-container {
+	text-align: left;
+	align-self: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	color: #272727;
+	padding: 20px 60px 80px 60px;
+	background-color: #ECBDC4;
+}
+
+.readme-container h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+}
+
+.readme-container h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	color: white;
+}
