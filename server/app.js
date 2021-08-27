@@ -1,12 +1,9 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import passport from 'passport'
 import cors from 'cors'
-import tennis from './routes/tennis.js';
+import tennis from './routes/products.js';
 import auth from './routes/auth.js';
 import User from './models/user.js';
-import localStrategy from 'passport-local';
-import passportLocalMongoose from 'passport-local-mongoose';
 import flash from 'connect-flash';
 import session from 'express-session'
 
@@ -15,8 +12,6 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json({extended: true}));
 app.use(cors());
-app.use(passport.initialize());
-app.use(passport.session());
 app.use(session({
     secret:'Michael1995',
     saveUninitialized: false,
@@ -34,11 +29,7 @@ app.use(function(req, res, next){
     next();
 });
 
-passport.use(new localStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-
-const CONNECTION_URL = "mongodb+srv://maor:Michael1995@courtennis.vptz3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://maor:Michael1995@cluster0.lwknm.mongodb.net/courtennis?retryWrites=true&w=majority";
 
 //REQUIRING ROUTES
 app.use(tennis);

@@ -1,0 +1,1 @@
+// TODO: add auto increment id for each product - https://www.tutorialspoint.com/mongodb/mongodb_autoincrement_sequence.html
