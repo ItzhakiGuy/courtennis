@@ -16,10 +16,10 @@ const Nav = styled.nav`
 `;
 
 const NavIcon = styled(Link)`
-    max-width: 80px,
-    max-height: 80px,
+    max-width: 80px;
+    max-height: 80px;
     display: flex;
-    align-items: left;
+    align-items: self-end;
     text-decoration: none;
     padding: 1rem;
     cursor: pointer;
