@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./loginPage.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import authenticationService from "../services/AuthenticationService";
 
 function SignUpPage() {
     const [username, setUsername] = useState(null);
@@ -19,7 +20,12 @@ function SignUpPage() {
 
         const signUpResponse = await signUpRequest(username, password);
         if (signUpResponse.status === 200) {
-            routerHistory.push("/login");
+            const response = await authenticationService.login(username, password, false);
+            if (authenticationService.isUserLoggedIn()) {
+                routerHistory.push("/");
+            } else {
+                alert(response.message);
+            }
         } else {
             alert(signUpResponse.message);
         }
