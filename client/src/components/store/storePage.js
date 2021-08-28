@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../storeProducts/storeProducts.json'
+import data from '../../seedProducts/initialProducts.json'
 import './storePage.css';
 import SearchItemInStore from "../searchItemInStore";
 import ProductContainer from "./productContainer";

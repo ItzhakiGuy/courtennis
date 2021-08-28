@@ -26,7 +26,7 @@ export default class Item extends Component {
 
                 <div className="product-image-container">
                     <a href={"#" + item._id}>
-                        <img src={item.image} alt={item.title} />
+                        <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
                     </a>
                 </div>
 
