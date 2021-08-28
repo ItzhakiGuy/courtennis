@@ -1,22 +1,26 @@
+h1{
+	text-align: center;
+}
+
+h3, p{
+	margin-bottom: 10px;
+}
+
 .readme-container {
 	text-align: left;
 	align-self: center;
-	margin-left: 200px;
-	margin-right: 200px;
-	color: #272727;
-	padding: 20px 60px 80px 60px;
-	background-color: #ECBDC4;
+	margin: 0px 200px;
+	padding: 30px 60px;
+	background-color: rgba(195,195,187,0.96);
 }
 
 .readme-container h2 {
 	font-family: 'Quicksand', sans-serif;
-	font-weight: lighter;
 	color: white;
 	text-align: center;
 }
 
 .readme-container h3 {
 	font-family: 'Quicksand', sans-serif;
-	font-weight: lighter;
-	color: white;
-}
+	color: #5656c6;
+	text-decoration: underline}

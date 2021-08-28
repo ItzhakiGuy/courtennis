@@ -5,22 +5,19 @@ const ReadMe = props => {
 
     return (
         <div className='readme-container'>
-            <h2>Read Me - Lee Cohen, ID: 311127419</h2>
+            <h1>Readme - Maor Graiber </h1>
+            <h1>ID - 314976077</h1>
 
             <h3>Store name</h3>
-                ALKU Jewelry
+            <p>Courtennis</p>
 
             <h3>What are you selling?</h3>
-            <p>
-                ALKU Jewelry is a fine hand-made jewelry brand. <br/>
-                We sell beautiful necklaces, bracelets and rings for reasonable prices!
-            </p>
+            <p>Courtennis is selling tennis rackets from leading companies such as Wilson, Babolat & Tecnifibre</p>
 
-            <h3>What additional page(s) did you add? How to operate them?</h3>
+            <h3>What additional page(s) did you add? How to operate it?</h3>
             <p>
-                We added a number of extra pages for our clients to use: <br/>
                 <ul>
-                    <li>An "About Us" page, providing a more personal touch tou our website. In the page our users can
+                    <li>"About Us" page, to learn about the team that founded the website and . In the page our users can
                     read a bit about the brand and about us.</li>
                     <li>A "Contact Us" page in which our users can leave their full name and email address and
                     we will get back to them ASAP!</li>
@@ -34,17 +31,18 @@ const ReadMe = props => {
             <p>
                 We encountered a number of difficulties while working on this project: <br />
                 <ul>
+                    <li>Learning how the BE and FE can communicate</li>
                     <li>Co-working - since Zahi went back to the army, we found it very hard to juggle between all the tasks
                     and work together on this project. </li>
                     <li>React.js - this was the first experience for both of us working with React.js which was challenging. </li>
                     <li>Fully integrated system - creating a functional, integrated system to answer all the requirements was difficult.</li>
 
                 </ul>
-                </p>
+            </p>
 
-            <h3>Who is your partner? What did you do? What did your partner do?</h3>
+            <h3>Who is your partner?  name and id. What did you do? What did your partner do?</h3>
             <p>
-                My partner is Itzhack Akuka, ID: 065927527. <br/>
+                My partner is Guy Itzhaki, ID: 206292864. <br/>
                 We worked on the project together so we both had something to do with every feature. If we had to say who
                 led each part it would probably be:
                 Lee - About Us, Contact Us, Store and design.
