@@ -73,6 +73,11 @@ export const Navigation = () => {
                     </Link>
                 </div>
 
+                <div><Link to="/readme.html">
+                    Readme
+                </Link>
+                </div>
+
             </ul>
         </nav>
     )

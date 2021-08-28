@@ -16,7 +16,7 @@ const ReadMe = props => {
 
             <h3>What additional page(s) did you add? How to operate it?</h3>
             <p>
-                <ul>
+                <ol>
                     <li>"About Us" page, to learn about the team that founded the website and . In the page our users can
                     read a bit about the brand and about us.</li>
                     <li>A "Contact Us" page in which our users can leave their full name and email address and
@@ -24,64 +24,48 @@ const ReadMe = props => {
                     <li>Since our client is our top priority, we have added a goodbye page to be presented after a purchase
                         is complete. In this page, which comes up right after the client completes their purchase, we thank them
                         and present the purchase ID number for future reference.</li>
-                </ul>
+                </ol>
             </p>
 
             <h3>What was hard to do?</h3>
             <p>
-                We encountered a number of difficulties while working on this project: <br />
-                <ul>
-                    <li>Learning how the BE and FE can communicate</li>
-                    <li>Co-working - since Zahi went back to the army, we found it very hard to juggle between all the tasks
-                    and work together on this project. </li>
-                    <li>React.js - this was the first experience for both of us working with React.js which was challenging. </li>
-                    <li>Fully integrated system - creating a functional, integrated system to answer all the requirements was difficult.</li>
-
-                </ul>
+                <ol>
+                    <li>Learning to use React.js</li>
+                    <li>Understanding how to communicate between FE and BE</li>
+                    <li>Learning to efficiently debug the client & server</li>
+                </ol>
             </p>
 
             <h3>Who is your partner?  name and id. What did you do? What did your partner do?</h3>
             <p>
                 My partner is Guy Itzhaki, ID: 206292864. <br/>
-                We worked on the project together so we both had something to do with every feature. If we had to say who
-                led each part it would probably be:
-                Lee - About Us, Contact Us, Store and design.
-                Zahi - Cart page, Login/Sign Up page.
+                Guy and I worked together on the design of the system, initial set up of express, mongo (hosted in atlas), and React.js.
+                From there each one took responsibility of a different screen (FE + BE) allowing both tof us to task responsibility of entire pages and doing the routing + FE work.
+                Maor's screens - Login/Sign Up page, About Us, Contact Us,
+                Guy's screens - Store and design, cart
             </p>
 
-            <h3>Specify all the different routes your app supports</h3>
-            <p>
-                Our app supports the following routes: <br/><br/>
-                GET requests: <br/>
-                <ul>
-                    <li>Logout - api/logout</li>
-                    <li>Admin - api/admin/users</li>
-                    <li>Admin - api/admin/user:id</li>
-                    <li>Purchase - api/purchase</li>
-                </ul>
-                POST requests:
-                <ul>
-                    <li>Sign Up - register</li>
-                    <li>Login - login</li>
-                    <li>Purchase - purchase</li>
-                </ul>
-            </p>
-
-            <h3>How did you make your store secured?</h3>
-            <p>
-                We took a number of actions to guaranty our store's security: <br/>
-                <ul>
-                    <li>Password strength - our users are required to choose a strong password which is also encrypted
-                    on the server side</li>
-                    <li>All routes have exceptions on server</li>
-                    <li>All wrong inputs have server exceptions</li>
-                    <li>Server and GUI block all API errors received</li>
-                </ul>
-            </p>
 
             <h3>Did you implement the store using react.js?</h3>
             <p>
                 Yes, our store was implemented using React.js.
+            </p>
+
+            <h3>Specify all the different routes your app supports</h3>
+            <p>
+                GET routes: <br/>
+                <ol>
+                    <li>Logout - api/logout</li>
+                    <li>Admin - api/admin/users</li>
+                    <li>Admin - api/admin/user:id</li>
+                    <li>Purchase - api/purchase</li>
+                </ol>
+                POST routes:
+                <ol>
+                    <li>Sign Up - register</li>
+                    <li>Login - login</li>
+                    <li>Purchase - purchase</li>
+                </ol>
             </p>
         </div>
     );
