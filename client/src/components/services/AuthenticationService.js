@@ -13,7 +13,7 @@ class AuthenticationService {
         const body = { username, password, rememberMe };
 
         loginResponse = await axios.post('/login', body)
-            .then(response => response.success = true)
+            .then(response => response.data)
             .catch((error) => {
                 if (error.response && error.response.data) {
                     return error.response.data;
@@ -25,7 +25,7 @@ class AuthenticationService {
                 }
             });
 
-        this.authenticated = loginResponse;
+        this.authenticated = loginResponse.success;
         if (this.authenticated) this.username = username;
         notifyLoginStatusChanged(this);
 

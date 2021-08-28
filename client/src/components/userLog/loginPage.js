@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './loginPage.css';
 import authenticationService from "../services/AuthenticationService";
+import Button from '@material-ui/core/Button';
 
 const LoginPage = props => {
     const [username, setUsername] = useState(null),
         [password, setPassword] = useState(null),
         [rememberMe, setRememberMe] = useState(false),
-        [isAuthenticated, setIsAutheticated] = useState(null);
+        [isAuthenticated, setIsAuthenticated] = useState(null);
     authenticationService.registerForLoginStatusChangedEvent((isUserLoggedIn) =>
-        setIsAutheticated(isUserLoggedIn));
+        setIsAuthenticated(isUserLoggedIn));
 
     const loginClicked = async () => {
         if (!username) {
@@ -69,7 +70,7 @@ const LoginPage = props => {
     } else {
         return <div className="login">
             <div className="site-login-container">
-                <img className="login-logo" src={process.env.PUBLIC_URL + "/logo-icon.png"} />
+                <img className="login-logo" src={process.env.PUBLIC_URL + "/courtennis-logo.png"} />
                 <input type="text" id='username' placeholder="Username" onChange={changedUsername}
                     onKeyDown={handleKeyDown} />
                 <input type="password" id="password" placeholder="Password" onChange={changedPassword}
@@ -80,8 +81,8 @@ const LoginPage = props => {
                         onKeyDown={handleKeyDown} />
                     <span className="checkmark" />
                 </label>
-                <button type="button" className="login-button" onClick={loginClicked}>LOGIN</button>
-                <button type="sign-up" className="signup-button" onClick={signUpClicked}>SIGN UP</button>
+                <Button variant="contained" type="button" className="login-button" onClick={loginClicked}>LOGIN</Button>
+                <Button variant="contained" type="sign-up" className="signup-button" onClick={signUpClicked}>SIGN UP</Button>
             </div>
         </div>;
     }

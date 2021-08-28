@@ -3,7 +3,7 @@ import React from "react";
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 // import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
-import { FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-LEE_icons/fa';
 import logo from '../assets/icons/310075.svg';
 
 const Nav = styled.nav`

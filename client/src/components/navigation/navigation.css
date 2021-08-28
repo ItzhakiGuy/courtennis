@@ -20,11 +20,12 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 10px;
-	background-color: #C28285;
+	background-color: rgba(249,249,240,0.96)
 }
 
 a {
-	color: #ffffff;
+	color: #000000;
+	font-size: large;
 }
 
 .navigation-logo.store-logo {
