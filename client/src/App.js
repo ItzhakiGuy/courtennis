@@ -1,57 +1,40 @@
-import './App.css';
-// import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
-import {Component} from "react";
-import { Navbar } from './components/Navbar';
-import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import { home, about, browse, contactus } from './pages/home';
-import Home from './pages/home';
-import About from './pages/about';
-import Browse from './pages/browse';
-import Contactus from './pages/contactus';
-import Signin from './pages/signin';
-import SignUp from './pages/signup';
+import React from "react";
+import "./App.css";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import StorePage from "./components/store/storePage";
+import LoginPage from "./components/userLog/loginPage";
+import SignUpPage from "./components/userLog/signUpPage";
+import AdminPage from "./components/admin/adminPage";
+import GoodbyePage from "./components/goodbye/goodbyePage";
+import CartPage from "./components/cart/cartPage";
+import Navigation from "./components/navigation/navigation";
+import SecuredRoute from "./components/securedRouting/securedRoute";
+import SecuredAdminRoute from "./components/securedRouting/securedAdminRoute";
+import ChekoutPage from "./components/chekout/chekoutPage";
+import ReadMe from "./components/readme/ReadMe";
+import AboutUs from "./components/aboutUs/aboutUs";
+import ContactUsPage from "./components/contactUs/contactUsPage";
 
-const AppContainer = styled.div`
-  display: 'flex';
-`;
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    // this.setState( { apiResponse: apiRequest} )
-    this.state = { 
-      apiResponse: "",
-      
-    };
-  }
-
-  callAPI() {
-    fetch("http://localhost:9000/")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
-  }
-
-  componentWillMount() {
-    this.callAPI();
-  }
-  render() {
-    return (
-      <AppContainer>
-        <Router>
-          <Navbar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/browse" component={Browse} />
-              <Route exact path="/contactus" component={Contactus} />
-              <Route exact path="/signin" component={Signin} />
-              <Route exact path="/signup" component={SignUp} />
-            </Switch>
-        </Router>
-      </AppContainer>
-    );
-  }
+function App() {
+  return (
+      <Router>
+        <div className="App">
+          <Navigation />
+          <Switch>
+            <Route path="/login" component={LoginPage}/>
+            <Route path="/register" component={SignUpPage}/>
+            <Route path="/readme.html" component={ReadMe}/>
+            <SecuredAdminRoute path="/admin" component={AdminPage}/>
+            <SecuredRoute path="/goodbye" component={GoodbyePage}/>
+            <SecuredRoute path="/checkout" component={ChekoutPage}/>
+            <SecuredRoute path="/cart" component={CartPage}/>
+            <SecuredRoute path="/aboutus" component={AboutUs}/>
+            <SecuredRoute path="/contactus" component={ContactUsPage}/>
+            <SecuredRoute path="/" component={StorePage}/>
+          </Switch>
+        </div>
+      </Router>
+  );
 }
 
 export default App;
