@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "_id": "class100s",
+      "image": "/images/wilson_rackets/clash100s.jpeg",
+      "title": "Wilson Clash 100S",
+      "price": 49.99
+    },
+    {
+      "_id": "ultra100",
+      "image": "../../public/wilson_rackets/ultra100.jpeg",
+      "title": "Wilson Ultra 100 Roland Garros",
+      "price": 78
+    },
+    {
+      "_id": "prostaff",
+      "image": "../../public/wilson_rackets/prostaff.jpeg",
+      "title": "Wilson Pro Staff 97 v13",
+      "price": 350
+    },
+    {
+      "_id": "blade98",
+      "image": "../../public/wilson_rackets/blade98.jpeg",
+      "title": "Wilson Blade 98 18x20 v7",
+      "price": 115
+    },
+    {
+      "_id": "blue_stone_necklace",
+      "image": "/images/necklaces/blue_stone_necklace.jpg",
+      "title": "Gorgeous blue stone necklace",
+      "price": 250
+    },
+    {
+      "_id": "eye_necklace",
+      "image": "/images/necklaces/eye_necklace.jpeg",
+      "title": "Eye necklace",
+      "price": 188
+    },
+    {
+      "_id": "feather_necklace",
+      "image": "/images/necklaces/feather_necklace.jpeg",
+      "title": "Feather necklace",
+      "price": 99
+    },
+    {
+      "_id": "rose_necklace",
+      "image": "/images/necklaces/rose_necklace.jpg",
+      "title": "Rose necklace",
+      "price": 75
+    },
+    {
+      "_id": "star_necklace",
+      "image": "/images/necklaces/star_necklace.jpg",
+      "title": "You're a STAR necklace",
+      "price": 123
+    },
+    {
+      "_id": "crown_ring",
+      "image": "/images/rings/crown_ring.jpg",
+      "title": "Crown ring",
+      "price": 160
+    },
+    {
+      "_id": "diamond_ring",
+      "image": "/images/rings/diamond_ring.jpeg",
+      "title": "PERFECT engagement ring!",
+      "price": 1000
+    },
+    {
+      "_id": "gold_ring",
+      "image": "/images/rings/gold_ring.jpeg",
+      "title": "Gold wedding ring",
+      "price": 450
+    },
+    {
+      "_id": "heart_ring",
+      "image": "/images/rings/heart_ring.jpeg",
+      "title": "Heart ring",
+      "price": 99
+    }
+  ]
+}
