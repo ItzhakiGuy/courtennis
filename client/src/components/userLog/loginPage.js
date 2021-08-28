@@ -3,7 +3,7 @@ import './loginPage.css';
 import authenticationService from "../services/AuthenticationService";
 
 const LoginPage = props => {
-    const [username, setEmail] = useState(null),
+    const [username, setUsername] = useState(null),
         [password, setPassword] = useState(null),
         [rememberMe, setRememberMe] = useState(false),
         [isAuthenticated, setIsAutheticated] = useState(null);
@@ -18,12 +18,7 @@ const LoginPage = props => {
             alert("Missing password");
             return;
         }
-        if (!usernameValid(username)) {
-            if (username !== 'admin') {
-                alert("Email address provided is invalid");
-                return;
-            }
-        }
+
         const response = await authenticationService.login(username, password, rememberMe);
         if (authenticationService.isUserLoggedIn()) {
             props.history.push("/");
@@ -32,14 +27,9 @@ const LoginPage = props => {
         }
     };
 
-    const usernameValid = (username) => {
-        const validateEmailRegex = /\S+@\S+\.\S+/;
-        return validateEmailRegex.test(username);
-    };
-
-    const changedEmailAddress = (event) => {
-        const username = String(event.target.value).toLowerCase().trim();
-        setEmail(username);
+    const changedUsername = (event) => {
+        const username = String(event.target.value);
+        setUsername(username);
     };
 
     const changedPassword = (event) => {
@@ -51,7 +41,7 @@ const LoginPage = props => {
     };
 
     const signUpClicked = (event) => {
-        window.location.href = '/signup'
+        window.location.href = '/register'
     };
 
     const handleKeyDown = (event) => {
@@ -80,9 +70,9 @@ const LoginPage = props => {
         return <div className="login">
             <div className="site-login-container">
                 <img className="login-logo" src={process.env.PUBLIC_URL + "/logo-icon.png"} />
-                <input type="text" id='username' placeholder="EMAIL ADDRESS" onChange={changedEmailAddress}
+                <input type="text" id='username' placeholder="Username" onChange={changedUsername}
                     onKeyDown={handleKeyDown} />
-                <input type="password" id="password" placeholder="PASSWORD" onChange={changedPassword}
+                <input type="password" id="password" placeholder="Password" onChange={changedPassword}
                     onKeyDown={handleKeyDown} />
                 <label className="checkbox-container">Remember me
                         <input type="checkbox" className="remember-me-checked" checked={rememberMe}

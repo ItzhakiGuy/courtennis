@@ -63,9 +63,9 @@ const ReadMe = props => {
                 </ul>
                 POST requests:
                 <ul>
-                    <li>Sign Up - api/signup</li>
-                    <li>Login - api/login</li>
-                    <li>Purchase - api/purchase</li>
+                    <li>Sign Up - register</li>
+                    <li>Login - login</li>
+                    <li>Purchase - purchase</li>
                 </ul>
             </p>
 

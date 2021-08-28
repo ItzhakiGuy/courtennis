@@ -16,10 +16,10 @@ const Nav = styled.nav`
 `;
 
 const NavIcon = styled(Link)`
-    max-width: 80px,
-    max-height: 80px,
+    max-width: 80px;
+    max-height: 80px;
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     text-decoration: none;
     padding: 1rem;
     cursor: pointer;
@@ -114,7 +114,7 @@ export function Navbar() {
           </NavMenu>
           <NavBtn>
               <NavBtnLink to='/signin'>Sign in</NavBtnLink>
-              <NavBtnLink to='/signup'>Sign up</NavBtnLink>
+              <NavBtnLink to='/register'>Register</NavBtnLink>
           </NavBtn>
         </Nav>
     );

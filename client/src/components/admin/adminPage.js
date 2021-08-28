@@ -33,7 +33,7 @@ class AdminPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`/api/purchase`)
+        axios.get(`/purchase`)
             .then(res => {
                 const purchases = res.data;
                 this.originalData = purchases;

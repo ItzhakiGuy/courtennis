@@ -9,9 +9,9 @@ export const login = (req, res) => {
         .then(async user => {
             const validPassword = await bcrypt.compare(userRequest.password, user.password);
             if (validPassword) {
-                res.json({status: user.username + ' logged in!'})
+                res.json({status: '200', success: true, message: `${user.username} is logged in!!`})
             } else {
-                res.json({error: ' incorrect password, please try again'})
+                res.json({success: false, error: ' incorrect password, please try again'})
             }
         })
         .catch(() => {

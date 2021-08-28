@@ -8,12 +8,12 @@ class AuthenticationService {
         this.loginStatusObservers = [];
     }
 
-    async login(email, password, rememberMe) {
+    async login(username, password, rememberMe) {
         let loginResponse;
-        const body = { email, password, rememberMe };
+        const body = { username, password, rememberMe };
 
         loginResponse = await axios.post('/login', body)
-            .then(response => response.data)
+            .then(response => response.success = true)
             .catch((error) => {
                 if (error.response && error.response.data) {
                     return error.response.data;
@@ -25,8 +25,8 @@ class AuthenticationService {
                 }
             });
 
-        this.authenticated = !!loginResponse.success;
-        if (this.authenticated) this.email = email;
+        this.authenticated = loginResponse;
+        if (this.authenticated) this.username = username;
         notifyLoginStatusChanged(this);
 
         return loginResponse;
@@ -34,12 +34,12 @@ class AuthenticationService {
 
     async logout() {
         this.authenticated = false;
-        this.email = null;
+        this.username = null;
         this.killCookie();
         notifyLoginStatusChanged(this);
 
         let logoutResponse;
-        logoutResponse = await axios.get('/api/logout')
+        logoutResponse = await axios.get('/logout')
             .then(response => response.data)
             .catch((error) => {
                 if (error.response && error.response.data) {

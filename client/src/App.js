@@ -22,7 +22,7 @@ function App() {
           <Navigation />
           <Switch>
             <Route path="/login" component={LoginPage}/>
-            <Route path="/signup" component={SignUpPage}/>
+            <Route path="/register" component={SignUpPage}/>
             <Route path="/readme.html" component={ReadMe}/>
             <SecuredAdminRoute path="/admin" component={AdminPage}/>
             <SecuredRoute path="/goodbye" component={GoodbyePage}/>

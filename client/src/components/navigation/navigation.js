@@ -24,32 +24,32 @@ export const Navigation = props => {
         if (isVisible) {
             return (
                 <nav className="navigation" style={{display: 'flex'}}>
-                    <img className='store-logo' onClick={handleLogoClick}
-                         src={process.env.PUBLIC_URL + '/alku-store-logo.png'}
-                         alt="store-logo"/>
+                    {/*<img className='store-logo' onClick={handleLogoClick}*/}
+                    {/*     src={process.env.PUBLIC_URL + '/alku-store-logo.png'}*/}
+                    {/*     alt="store-logo"/>*/}
                     <ul className="navigation-links">
                         <div>
                             <Link to="/">
-                                <img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}
-                                     className="navigation-logo"
-                                     alt="nav-logo"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}*/}
+                                {/*     className="navigation-logo"*/}
+                                {/*     alt="nav-logo"/>*/}
                                 Our Jewelry
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/contactus">
-                                <img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}
-                                     className="navigation-logo sale-animation"
-                                     alt="contact-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}*/}
+                                {/*     className="navigation-logo sale-animation"*/}
+                                {/*     alt="contact-icon"/>*/}
                                 Contact Us
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/aboutus">
-                                <img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"
-                                     alt="orders-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="orders-icon"/>*/}
                                 About Us
                             </Link>
                         </div>
@@ -95,32 +95,33 @@ export const Navigation = props => {
 
                         <div>
                             <Link to="/contactus">
-                                <img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}
-                                     className="navigation-logo sale-animation"
-                                     alt="contact-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}*/}
+                                {/*     className="navigation-logo sale-animation"*/}
+                                {/*     alt="contact-icon"/>*/}
                                 Contact Us
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/aboutus">
-                                <img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"
-                                     alt="orders-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="orders-icon"/>*/}
                                 About Us
                             </Link>
                         </div>
 
                         <div><Link to="/cart">
-                            <img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"
-                                 alt="cart-icon"/>
+                            {/*<img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"*/}
+                            {/*     alt="cart-icon"/>*/}
                             Cart
                         </Link>
                         </div>
 
                         <div className={"admin-link"}>
                             <Link to="/admin">
-                                <img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"
-                                     alt="admin-icon"/>Admin</Link>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="admin-icon"/>*/}
+                                Admin</Link>
                         </div>
 
                         <div>
@@ -137,47 +138,48 @@ export const Navigation = props => {
         if (isVisible) {
             return (
                 <nav className="navigation" style={{display: 'flex'}}>
-                    <img className='store-logo' onClick={handleLogoClick}
-                         src={process.env.PUBLIC_URL + '/alku-store-logo.png'}
-                         alt="store-logo"/>
+                    {/*<img className='store-logo' onClick={handleLogoClick}*/}
+                    {/*     src={process.env.PUBLIC_URL + '/alku-store-logo.png'}*/}
+                    {/*     alt="store-logo"/>*/}
                     <ul className="navigation-links">
                         <div>
                             <Link to="/">
-                                <img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}
-                                     className="navigation-logo"
-                                     alt="nav-logo"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}*/}
+                                {/*     className="navigation-logo"*/}
+                                {/*     alt="nav-logo"/>*/}
                                 Our Jewelry
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/contactus">
-                                <img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}
-                                     className="navigation-logo sale-animation"
-                                     alt="contact-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}*/}
+                                {/*     className="navigation-logo sale-animation"*/}
+                                {/*     alt="contact-icon"/>*/}
                                 Contact Us
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/aboutus">
-                                <img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"
-                                     alt="orders-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="orders-icon"/>*/}
                                 About Us
                             </Link>
                         </div>
 
                         <div><Link to="/cart">
-                            <img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"
-                                 alt="cart-icon"/>
+                            {/*<img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"*/}
+                            {/*     alt="cart-icon"/>*/}
                             Cart
                         </Link>
                         </div>
 
                         <div className={"admin-link"}>
                             <Link to="/admin">
-                                <img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"
-                                     alt="admin-icon"/>Admin</Link>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="admin-icon"/>*/}
+                                Admin</Link>
                         </div>
 
                         <div>
@@ -192,47 +194,48 @@ export const Navigation = props => {
         } else {
             return (
                 <nav className="navigation" style={{display: 'flex'}}>
-                    <img className='store-logo' onClick={handleLogoClick}
-                         src={process.env.PUBLIC_URL + '/alku-store-logo.png'}
-                         alt="store-logo"/>
+                    {/*<img className='store-logo' onClick={handleLogoClick}*/}
+                    {/*     src={process.env.PUBLIC_URL + '/alku-store-logo.png'}*/}
+                    {/*     alt="store-logo"/>*/}
                     <ul className="navigation-links">
                         <div>
                             <Link to="/">
-                                <img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}
-                                     className="navigation-logo"
-                                     alt="nav-logo"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/store-icon.svg'}*/}
+                                {/*     className="navigation-logo"*/}
+                                {/*     alt="nav-logo"/>*/}
                                 Our Jewelry
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/contactus">
-                                <img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}
-                                     className="navigation-logo sale-animation"
-                                     alt="contact-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/contact-us-icon.svg'}*/}
+                                {/*     className="navigation-logo sale-animation"*/}
+                                {/*     alt="contact-icon"/>*/}
                                 Contact Us
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/aboutus">
-                                <img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"
-                                     alt="orders-icon"/>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/about-us-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="orders-icon"/>*/}
                                 About Us
                             </Link>
                         </div>
 
                         <div><Link to="/cart">
-                            <img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"
-                                 alt="cart-icon"/>
+                            {/*<img src={process.env.PUBLIC_URL + './icons/cart-icon.svg'} className="navigation-logo"*/}
+                            {/*     alt="cart-icon"/>*/}
                             Cart
                         </Link>
                         </div>
 
                         <div className={"admin-link"}>
                             <Link to="/admin">
-                                <img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"
-                                     alt="admin-icon"/>Admin</Link>
+                                {/*<img src={process.env.PUBLIC_URL + './icons/admin-icon.svg'} className="navigation-logo"*/}
+                                {/*     alt="admin-icon"/>*/}
+                                Admin</Link>
                         </div>
 
                         <div>

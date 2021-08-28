@@ -48,7 +48,7 @@ const ChekoutPage = props => {
                 purchases: cartItems
             };
 
-            purchaseResponse = await axios.post("/api/purchase", body)
+            purchaseResponse = await axios.post("/purchase", body)
                 .then(response => response.data)
                 .catch((error) => {
                     if (error.response && error.response.data) {
