@@ -28,9 +28,8 @@
 .filter {
 	display: flex;
 	flex-direction: column;
-	background-color: #F5DCE0;
+	background-color: rgba(168,187,175,0.96);
 	padding: 1rem 1rem 15px 130px;
-	position: -webkit-sticky;
 	position: sticky;
 }
 
@@ -47,7 +46,7 @@
 }
 
 .filter .filter-result {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'sans', sans-serif; /* Needs to change*/
 	font-weight: lighter;
 	padding: 0;
 	font-size: 16px;
@@ -62,22 +61,15 @@
 .filter button {
     height: 60px;
     width: 150px;
-    background-color: #ECBDC4;
+    background-color: rgba(168,187,175,0.96);
 }
 
 .search {
 	margin-right: auto;
 }
 
-.search input {
-	background-color: white;
-	padding: 8px;
-	width: 540px;
-	border-color: transparent;
-}
-
 .saleHeader h2{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Ariel', sans-serif; /* Change */
 	font-weight: lighter;
 	font-size: 80px;
 	margin-top: 80px;

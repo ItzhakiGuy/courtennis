@@ -1,19 +1,19 @@
 import React from "react";
 import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import StorePage from "./components/store/storePage";
-import LoginPage from "./components/auth/loginPage";
-import SignUpPage from "./components/auth/signUpPage";
-import AdminPage from "./components/admin/adminPage";
-import GoodbyePage from "./components/goodbye/goodbyePage";
-import CartPage from "./components/cart/cartPage";
-import Navigation from "./components/navigation/navigation";
 import SecuredRoute from "./components/securedRouting/securedRoute";
 import SecuredAdminRoute from "./components/securedRouting/securedAdminRoute";
-import ChekoutPage from "./components/chekout/chekoutPage";
-import ReadMe from "./components/readme_maor/ReadMe";
+import SignUpPage from "./components/userLog/signUpPage";
+import LoginPage from "./components/userLog/loginPage";
+import Navigation from "./components/navigation/navigation";
+import StorePage from "./components/store/storePage";
+import ReadMe from "./components/readme/ReadMe";
 import AboutUs from "./components/aboutUs/aboutUs";
+import AdminPage from "./components/admin/adminPage";
+import CartPage from "./components/cart/cartPage";
+import ChekoutPage from "./components/chekout/chekoutPage";
 import ContactUsPage from "./components/contactUs/contactUsPage";
+import GoodbyePage from "./components/goodbye/goodbyePage";
 
 function App() {
   return (
