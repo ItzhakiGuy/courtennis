@@ -5,6 +5,12 @@ import authenticationService from "../services/AuthenticationService.js";
 import {useHistory} from "react-router-dom";
 import ShoppingCartTwoToneIcon from '@material-ui/icons/ShoppingCartTwoTone';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
+import ExitToAppTwoToneIcon from '@material-ui/icons/ExitToAppTwoTone';
+import ContactMailTwoToneIcon from '@material-ui/icons/ContactMailTwoTone';
+import BlurOnTwoToneIcon from '@material-ui/icons/BlurOnTwoTone';
+
+import Fab from '@material-ui/core/Fab';
 
 export const Navigation = () => {
 
@@ -26,58 +32,54 @@ export const Navigation = () => {
         <nav className="navigation" style={{display: 'flex'}}>
             <img className='store-logo' onClick={handleLogoClick}
                  src={process.env.PUBLIC_URL + '/courtennis-logo.png'}
-                 alt="store-logo"/>
+                 alt="store-logo" />
             <ul className="navigation-links">
-                <div>
+                <Fab variant="extended">
                     <Link to="/">
-                        <img src={process.env.PUBLIC_URL + './LEE_icons/store-icon.svg'}
-                             className="navigation-logo"
-                             alt="nav-logo"/>
-                        Our Jewelry
+                        <BlurOnTwoToneIcon />
+                        Browse
                     </Link>
-                </div>
+                </Fab>
 
-                <div>
+                <Fab variant="extended">
                     <Link to="/contactus">
-                        <img src={process.env.PUBLIC_URL + './LEE_icons/contact-us-icon.svg'}
-                             className="navigation-logo sale-animation"
-                             alt="contact-icon"/>
+                        <ContactMailTwoToneIcon />
                         Contact Us
                     </Link>
-                </div>
+                </Fab>
 
-                <div>
+                <Fab variant="extended">
                     <Link to="/aboutus">
-                        <img src={process.env.PUBLIC_URL + './LEE_icons/about-us-icon.svg'} className="navigation-logo"
-                             alt="orders-icon"/>
+                       <InfoTwoToneIcon />
                         About Us
                     </Link>
-                </div>
+                </Fab>
 
-                <div><Link to="/cart">
+                <Fab variant="extended">
+                    <Link to="/cart">
                     <ShoppingCartTwoToneIcon />
                     Cart
                 </Link>
-                </div>
-
-                <div className={"admin-link"}>
+                </Fab>
+            
+                {authenticationService.isUserAdmin() && 
+                <Fab variant="extended" className={"admin-link"}>
                     <Link to="/admin">
-                        <img src={process.env.PUBLIC_URL + './LEE_icons/admin-icon.svg'} className="navigation-logo"
-                             alt="admin-icon"/>
-                        Admin</Link>
-                </div>
-
-                <div>
+                        <SupervisorAccountIcon />
+                        Admin
+                    </Link>
+                </Fab>}
+                <Fab variant="extended">
+                    <Link to="/readme.html">
+                        Readme
+                    </Link>
+                </Fab>
+                <Fab variant="extended">
                     <Link className="logout-button" onClick={handleLogout}>
+                        <ExitToAppTwoToneIcon />
                         Logout
                     </Link>
-                </div>
-
-                <div><Link to="/readme.html">
-                    Readme
-                </Link>
-                </div>
-
+                </Fab>
             </ul>
         </nav>
     )

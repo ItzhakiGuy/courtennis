@@ -61,7 +61,7 @@ class StorePage extends React.Component {
 
     render() {
         return (
-            <div className="my-container">
+            <div className="products-container">
                 <main>
                     <div className="content">
                         <div className="main">

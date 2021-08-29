@@ -42,7 +42,7 @@ html {
 .about-section {
 	padding: 50px;
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 .header-container {
@@ -51,7 +51,7 @@ html {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	width: inherit;
-	background-color: #ECBDC4;
+	background-color: #64916e4b;
 }
 
 .team-container {
