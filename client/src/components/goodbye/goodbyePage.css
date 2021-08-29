@@ -25,14 +25,14 @@
 	color: white;
 	height: 60px;
 	width: 300px;
-	background-color: #ECBDC4;
+	background-color: #b5e8f5;
 }
 
 .back-to-store-button:hover {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: lighter;
-	color: white;
-	background-color: #FFF1F5;
+	color: rgb(246, 248, 237);
+	background-color: #a6edff;
 }
 
 * {

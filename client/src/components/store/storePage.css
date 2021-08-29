@@ -28,7 +28,7 @@
 .filter {
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(168,187,175,0.96);
+	background-color: rgba(195, 221, 204, 0.96);
 	padding: 1rem 1rem 15px 130px;
 	position: sticky;
 }

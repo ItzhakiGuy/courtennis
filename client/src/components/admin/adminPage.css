@@ -34,21 +34,21 @@
   font-weight: lighter;
   font-size: 1.2rem;
   text-align: center;
-  border: 1px solid #ddd;
-  background-color: #FFF1F5;
+  border: 1px solid rgb(91, 128, 121);
+  background-color: turquoise;
   padding: 8px;
 }
 .admin-container tr.red th {
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
   background: red(191, 163, 193);
-  color: white;
+  color: rgb(158, 158, 212);
   padding: 10px;
 }
 .admin-container th {
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
-  background: #ecbabd;
+  background: #b0ddcc;
   position: sticky;
   top: 0;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
