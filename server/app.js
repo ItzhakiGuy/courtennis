@@ -39,16 +39,12 @@ mongoose.connect(CONNECTION_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('Connected to DB!'))
+.then(() => console.log('Connected to Courtennis DB!'))
 .catch(error => console.log(error.message));
 
 mongoose.set('useFindAndModify', false)
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
 const port = 9000;
 app.listen((port || process.env.PORT), () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Courtennis listening at http://localhost:${port}`)
 })
