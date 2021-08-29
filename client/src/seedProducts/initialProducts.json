@@ -25,6 +25,30 @@
       "price": 250
     },
     {
+      "_id": "lx1000",
+      "image": "/dunlop_rackets/lx1000.jpeg",
+      "title": "Dunlop LX 1000\n",
+      "price": 299
+    },
+    {
+      "_id": "cx200",
+      "image": "/dunlop_rackets/cx200.jpeg",
+      "title": "Dunlop CX 200 Tour 18x20",
+      "price": 219
+    },
+    {
+      "_id": "sx300",
+      "image": "/dunlop_rackets/sx300.jpeg",
+      "title": "Dunlop SX 300",
+      "price": 199
+    },
+    {
+      "_id": "fx500",
+      "image": "/dunlop_rackets/fx500.jpeg",
+      "title": "Dunlop FX 500",
+      "price": 134
+    },
+    {
       "_id": "tf-x1_300",
       "image": "/tecnifibre_rackets/tf-x1_300.jpeg",
       "title": "Tecnifibre TF-X1 300",
