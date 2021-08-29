@@ -32,7 +32,7 @@
 	cursor: pointer;
 	margin: 15px;
 	flex-direction: row;
-	background-color: #fcfcfc;
+	background-color: #f4fbfc;
 	height: 350px;
 	width: 450px;
 	border-style: none;
@@ -58,9 +58,9 @@
 }
 
 .remove-from-cart-button {
-	background-color: #ECBDC4;
+	background-color: #e8fffb;
 }
 
 .remove-from-cart-button:hover {
-	background-color: #ECBDC4;
+	background-color: #d0f7fa;
 }

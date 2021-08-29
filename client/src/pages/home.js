@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HomeBackground = styled.div`
   background-attachment: fixed;
-  background-color: #00cccc;
+  background-color: lightcyan;
 `;
 
 const Home = () => {

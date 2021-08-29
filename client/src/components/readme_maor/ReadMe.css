@@ -11,7 +11,7 @@ h3, p{
 	align-self: center;
 	margin: 0px 200px;
 	padding: 30px 60px;
-	background-color: rgb(236, 236, 236);
+	background-color: rgb(215, 254, 255);
 }
 
 .readme-container h2 {
@@ -22,7 +22,7 @@ h3, p{
 
 .readme-container h3 {
 	font-family: 'Quicksand', sans-serif;
-	color: #5656c6;
+	color: #5acaf7;
 	text-decoration: underline
 }
 
