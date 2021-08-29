@@ -33,16 +33,10 @@ justify-content: center;
 	width: 40%;
 }
 
-.cart-information button:disabled:hover {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: lighter;
-	background-color: #f0fad8;
-}
-
 .cart-information button:disabled {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: lighter;
-	background-color: #eaf7cd;
+	background-color: #4ec14c;
 	color: white;
 }
 
@@ -53,11 +47,11 @@ justify-content: center;
 	margin-top: 30px;
 	height: 50px;
 	width: 150px;
-	background-color: #f0fad8;
+	background-color: #b8fc0d;
 }
 
 .cart-information button:hover {
-	background-color: #edffc5;
+	background-color: #7ba023;
 }
 
 .cart-container {
