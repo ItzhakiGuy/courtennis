@@ -10,30 +10,29 @@ class AboutUs extends React.Component {
                 </div>
 
                 <div className="team-container">
-                    <h2>Our Team</h2>
                     <div className="row">
                         <div className="column">
                             <div className="card">
                                 <img src={process.env.PUBLIC_URL + '/team_members/guy_itzhaki.jpeg'} alt="Guy Izhaki"/>
                                 <div className="container">
                                     <h2>Guy Itzhaki</h2>
-                                    <h3 className="title">Junior Android Developer at IronSource</h3>
-                                    <p className="description">I (almost) finished my Computer Science degree, this
-                                    is the final touch for me!</p>
+                                    <br></br>
+                                    <p className="description">I love hangout with friends and family, go to the beach
+                                        and trip around the world.<br></br>
+                                        This is my first business in the sports industry</p>
                                 </div>
+                        </div>
+                        </div>
+                        <div className="column">
+                        <div className="card">
+                            <img src={process.env.PUBLIC_URL + '/team_members/maor_graiber.jpeg'} alt="Maor Graiber"/>
+                            <div className="container">
+                                <h2>Maor Graiber</h2>
+                                <br></br>
+                                <p className="description">I'm 26 from Hod Hasharon. Tennis has always been a passion of mine, that's were the idea for the store originated<br></br>
+                                </p>
                             </div>
                         </div>
-
-                        <div className="column">
-                            <div className="card">
-                                <img src={process.env.PUBLIC_URL + '/team_members/maor_graiber.jpeg'} alt="Maor Graiber"/>
-                                <div className="container">
-                                    <h2>Maor Graiber</h2>
-                                    <h3 className="title">Lieutenant Colonel at the Israeli Navy</h3>
-                                    <p className="description">Returned to the army after a 3 year break during which I
-                                    completed a 1st and 2nd degree!</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
