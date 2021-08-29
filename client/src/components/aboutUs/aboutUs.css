@@ -55,7 +55,7 @@ html {
 }
 
 .team-container {
-	background-color: white;
+	background-color: rgba(192, 243, 252, 0.705);
 	justify-content: space-around;
 }
 

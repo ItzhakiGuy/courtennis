@@ -1,8 +1,25 @@
 import React, { Component } from "react";
 import "./item.css";
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+
+const useStyles = makeStyles({
+    root: {
+      minWidth: 345,
+    },
+    media: {
+      minHeight: 140,
+    },
+  });
 
 export default class Item extends Component {
-
+    
     constructor(props) {
         super(props);
         this.state = { itemInCart: 0, cartItems: this.props.cartItems };
@@ -22,30 +39,34 @@ export default class Item extends Component {
     render() {
         let item = this.props.products;
         return (
-            <div className="product">
-
-                <div className="product-image-container">
-                    <a href={"#" + item._id}>
-                        <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
-                    </a>
-                </div>
-
-                <div className="product-price">
-                    <div className="product-title">
-                        <p>
-                            {item.title}
-                        </p>
-                    </div>
-                    <div className="info">
-                        <h6 className="price">{item.price + "$"}</h6>
-                        <h6 className="info-cart">{"Quantity:" + this.state.itemInCart}</h6>
-                    </div>
-                    <div className="button-container">
-                        <button id="add-button" onClick={() => this.addToCart(item)}>Add to Cart</button>
-                    </div>
-                </div>
-
-            </div>);
+                <Card className="product">
+                <CardActionArea className="product-image-container">
+                  <CardMedia
+                    component="img"
+                    image={item.image}
+                    alt={item.title}
+                    title={item.title}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                        {item.title}
+                    </Typography>
+                    
+                    <Typography variant="body3" color="textSecondary" component="p">
+                        {"Quantity:" + this.state.itemInCart}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button id="add-button" onClick={() => this.addToCart(item)}>
+                      Add to Cart
+                  </Button>
+                  <Typography variant="h4" color="textSecondary" component="h2">
+                        {item.price + "$"}
+                    </Typography>
+                </CardActions>
+              </Card>
+              );
     }
 };
 

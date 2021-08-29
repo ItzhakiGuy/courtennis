@@ -74,6 +74,7 @@ class StorePage extends React.Component {
                             <div className="storeItems">
                                 <ProductContainer cart={this.addItemToCart} remove={this.removeItemFromCart}
                                                   products={this.state.filteredProducts} cartItems={this.state.cartItems}/>
+                                
                             </div>
                         </div>
                     </div>
