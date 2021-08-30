@@ -5,13 +5,13 @@ import SecuredRoute from "./components/securedRouting/securedRoute";
 import SecuredAdminRoute from "./components/securedRouting/securedAdminRoute";
 import LoginPage from "./components/auth/loginPage";
 import SignUpPage from "./components/auth/signUpPage";
-import Navigation from "./components/navigation/navigation";
-import StorePage from "./components/store/storePage";
+import Navbar from "./components/navbar/navbar";
+import Browse from "./components/store/browse";
 import ReadMe from "./components/readme_maor/ReadMe";
 import AboutUs from "./components/aboutUs/aboutUs";
 import AdminPage from "./components/admin/adminPage";
 import CartPage from "./components/cart/cartPage";
-import CheckoutPage from "./components/chekout/checkoutPage";
+import CheckoutPage from "./components/checkout/checkoutPage";
 import ContactUsPage from "./components/contactUs/contactUsPage";
 import ThankYou from "./components/thankYou/thankYou";
 
@@ -19,7 +19,7 @@ function App() {
   return (
       <Router>
         <div className="App">
-          <Navigation />
+          <Navbar />
           <Switch>
             <Route path="/login" component={LoginPage}/>
             <Route path="/register" component={SignUpPage}/>
@@ -30,7 +30,7 @@ function App() {
             <SecuredRoute path="/cart" component={CartPage}/>
             <SecuredRoute path="/aboutus" component={AboutUs}/>
             <SecuredRoute path="/contactus" component={ContactUsPage}/>
-            <SecuredRoute path="/" component={StorePage}/>
+            <SecuredRoute path="/" component={Browse}/>
           </Switch>
         </div>
       </Router>

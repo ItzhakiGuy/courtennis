@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from "../item/item"
-import './storePage.css';
+import './browse.css';
   
 class ProductContainer extends React.Component {
     render() {

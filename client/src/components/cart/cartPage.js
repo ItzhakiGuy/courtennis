@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./cartPage.css";
 import ItemInCart from "../itemInCart/itemInCart";
+import { Button } from "@material-ui/core";
 
 const CartPage = props => {
     const itemsFromStorage = JSON.parse(localStorage.getItem("cartItems")) || [],
@@ -29,7 +30,9 @@ const CartPage = props => {
         <div className="cart-information">
             <div className="cart-information-box">
                 <h2>Subtotal for {numOfItems(cartItems)} items: ${totalToPay(cartItems).toLocaleString()} </h2>
-                <button onClick={handleCheckoutButtonClick} disabled={numOfItems(cartItems) <= 0}>Checkout</button>
+                <Button variant="contained" color="primary" disableElevation onClick={handleCheckoutButtonClick} disabled={numOfItems(cartItems) <= 0}>
+                    Checkout
+                </Button>
             </div>
         </div>
 

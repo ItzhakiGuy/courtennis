@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import "./navigation.css"
+import "./navbar.css"
 import authenticationService from "../services/AuthenticationService.js";
 import {useHistory} from "react-router-dom";
 import ShoppingCartTwoToneIcon from '@material-ui/icons/ShoppingCartTwoTone';
@@ -12,7 +12,7 @@ import BlurOnTwoToneIcon from '@material-ui/icons/BlurOnTwoTone';
 
 import Fab from '@material-ui/core/Fab';
 
-export const Navigation = () => {
+export const Navbar = () => {
 
     const [, setIsVisible] = useState(false);
     const routerHistory = useHistory();
@@ -29,11 +29,11 @@ export const Navigation = () => {
     };
 
     return (
-        <nav className="navigation" style={{display: 'flex'}}>
+        <nav className="navbar">
             <img className='store-logo' onClick={handleLogoClick}
                  src={process.env.PUBLIC_URL + '/courtennis-logo.png'}
                  alt="store-logo" />
-            <ul className="navigation-links">
+            <ul className="navbar-links">
                 <Link to="/">
                     <Fab variant="extended">
                         <BlurOnTwoToneIcon />
@@ -89,4 +89,4 @@ export const Navigation = () => {
     )
 };
 
-export default Navigation;
+export default Navbar;
