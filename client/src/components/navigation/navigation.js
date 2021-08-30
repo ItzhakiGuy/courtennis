@@ -34,53 +34,56 @@ export const Navigation = () => {
                  src={process.env.PUBLIC_URL + '/courtennis-logo.png'}
                  alt="store-logo" />
             <ul className="navigation-links">
-                <Fab variant="extended">
-                    <Link to="/">
+                <Link to="/">
+                    <Fab variant="extended">
                         <BlurOnTwoToneIcon />
                         Browse
-                    </Link>
-                </Fab>
+                    </Fab>
+                </Link>
 
-                <Fab variant="extended">
-                    <Link to="/contactus">
+                <Link to="/contactus">
+                    <Fab variant="extended">
                         <ContactMailTwoToneIcon />
                         Contact Us
+                    </Fab>
                     </Link>
-                </Fab>
-
-                <Fab variant="extended">
-                    <Link to="/aboutus">
-                       <InfoTwoToneIcon />
+                
+                <Link to="/aboutus">
+                    <Fab variant="extended">
+                        <InfoTwoToneIcon />
                         About Us
-                    </Link>
-                </Fab>
-
-                <Fab variant="extended">
-                    <Link to="/cart">
-                    <ShoppingCartTwoToneIcon />
-                    Cart
+                    </Fab>
                 </Link>
-                </Fab>
-            
+
+                <Link to="/cart">
+                    <Fab variant="extended">
+                        <ShoppingCartTwoToneIcon />
+                        Cart
+                    </Fab>
+                    
+                </Link>
+
+                <Link to="/admin">
                 {/* {authenticationService.isUserAdmin() &&  */}
-                <Fab variant="extended" className={"admin-link"}>
-                    <Link to="/admin">
+                    <Fab variant="extended" className={"admin-link"}>
                         <SupervisorAccountIcon />
                         Admin
-                    </Link>
-                </Fab>
+                    </Fab>
+                </Link>
                 {/* } */}
-                <Fab variant="extended">
-                    <Link to="/readme.html">
+
+                <Link to="/readme.html">
+                    <Fab variant="extended">
                         Readme
-                    </Link>
-                </Fab>
-                <Fab variant="extended">
-                    <Link className="logout-button" onClick={handleLogout}>
+                    </Fab>
+                </Link>
+
+                <Link className="logout-button" onClick={handleLogout}>
+                    <Fab variant="extended">
                         <ExitToAppTwoToneIcon />
                         Logout
-                    </Link>
-                </Fab>
+                    </Fab>
+                </Link>
             </ul>
         </nav>
     )
