@@ -18,7 +18,7 @@ input[type=submit] {
     font-weight: lighter;
     background-color: #bddbec;
     font-size: 18px;
-    color: white;
+    color: rgb(253, 253, 250);
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -28,14 +28,13 @@ input[type=submit]:hover {
     background-color: #c9eef7;
 }
 
-/* Style the container/contact section */
 .container {
     border-radius: 5px;
     background-color: #bedbf3;
     padding: 10px;
+    min-height: 90%;
 }
 
-/* Create two columns that float next to eachother */
 .column {
     float: left;
     width: 50%;
@@ -43,7 +42,6 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -55,7 +53,6 @@ input[type=submit]:hover {
     height: 350px;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column, input[type=submit] {
         width: 100%;
