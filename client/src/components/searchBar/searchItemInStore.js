@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./store/browse.css";
+import "../store/browse.css";
 import TextField from '@material-ui/core/TextField';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 import Button from '@material-ui/core/Button';
@@ -12,8 +12,8 @@ class SearchItemInStore extends Component {
         const {searchTerm, onChange, cartCount, onClearCart} = this.props;
         return (
             <div className="filter">
-                <div className='search-and-text'>
-                    <TextField id="outlined-search" label="Search field" type="search" variant="outlined" value={searchTerm}
+                <div className="search">
+                    <TextField label="Search field" type="search" variant="outlined" value={searchTerm}
                                onChange={onChange} />
                     
                 </div>

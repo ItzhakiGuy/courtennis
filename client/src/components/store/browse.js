@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../seedProducts/initialProducts.json'
 import './browse.css';
-import SearchItemInStore from "../searchItemInStore";
+import SearchItemInStore from "../searchBar/searchItemInStore";
 import ProductContainer from "./productContainer";
 
 
