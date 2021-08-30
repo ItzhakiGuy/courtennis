@@ -1,15 +1,13 @@
 .cart-list-container {
 	display: flex;
 	flex-direction: row;
-justify-content: center;
+	justify-content: center;
 	flex-wrap: wrap;
 	width: 60%;
 	height: 100%;
 }
 
 .cart-information-box {
-	font-family: 'Segoe UI';
-	font-weight: lighter;
 	border-style: solid;
 	border-color: #b4e2dc;
 	display: flex;
@@ -24,9 +22,6 @@ justify-content: center;
 .cart-information {
 	font-family: 'Segoe UI';
 	font-weight: lighter;
-	align-self: flex-start;
-	margin: 0;
-	padding: 0;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
@@ -36,7 +31,7 @@ justify-content: center;
 .cart-information button:disabled {
 	font-family: 'Segoe UI';
 	font-weight: lighter;
-	background-color: #4ec14c;
+	background-color: #d1d1d1;
 	color: white;
 }
 
@@ -47,11 +42,11 @@ justify-content: center;
 	margin-top: 30px;
 	height: 50px;
 	width: 150px;
-	background-color: #b8fc0d;
+	background-color: #9193f8;
 }
 
 .cart-information button:hover {
-	background-color: #7ba023;
+	background-color: #6c76ff;
 }
 
 .cart-container {
@@ -63,9 +58,6 @@ justify-content: center;
 	align-items: stretch;
 	flex-wrap: wrap;
 	align-content: stretch;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 }
 

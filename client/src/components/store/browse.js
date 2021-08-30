@@ -1,11 +1,11 @@
 import React from 'react';
 import data from '../../seedProducts/initialProducts.json'
-import './storePage.css';
+import './browse.css';
 import SearchItemInStore from "../searchItemInStore";
 import ProductContainer from "./productContainer";
 
 
-class StorePage extends React.Component {
+class Browse extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -84,4 +84,4 @@ class StorePage extends React.Component {
     }
 }
 
-export default StorePage;
+export default Browse;
