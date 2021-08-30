@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.login{
-  height: 780px;
+.login, .signUp{
+  height: 760px;
 }
 .App-logo {
   height: 40vmin;

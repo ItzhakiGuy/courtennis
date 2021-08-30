@@ -66,7 +66,7 @@ function SignUpPage() {
             <input type="text" id="username" placeholder="Username" onChange={enteredUsername} />
             <input type="password" id="password" placeholder="Password" onChange={enteredPassword} />
             <button type="button" className="register-button" onClick={handleRegisterButtonClick}>Register</button>
-            <button type="button" className="signup-cancel" onClick={cancelClicked}>Cancel</button>
+            <button type="button" className="register-cancel" onClick={cancelClicked}>Cancel</button>
         </div>
     </div>);
 }
