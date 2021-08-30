@@ -44,7 +44,6 @@ const ReadMe = props => {
                 Guy's screens - Store and design, cart
             </p>
 
-
             <h3>Did you implement the store using react.js?</h3>
             <p>
                 Yes, our store was implemented using React.js.
