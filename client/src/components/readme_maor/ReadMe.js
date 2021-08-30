@@ -17,13 +17,10 @@ const ReadMe = props => {
             <h3>What additional page(s) did you add? How to operate it?</h3>
             <p>
                 <ol>
-                    <li>"About Us" page, to learn about the team that founded the website and . In the page our users can
-                    read a bit about the brand and about us.</li>
-                    <li>A "Contact Us" page in which our users can leave their full name and email address and
-                    we will get back to them ASAP!</li>
-                    <li>Since our client is our top priority, we have added a goodbye page to be presented after a purchase
-                        is complete. In this page, which comes up right after the client completes their purchase, we thank them
-                        and present the purchase ID number for future reference.</li>
+                    <li>"About Us" page, to learn about the team that founded the website. In the page our users can
+                    read a bit about the brand and about us the founders.</li>
+                    <li>A "Contact Us" page in which our users can leave their comments about the website!</li>
+                    <li>Thank you for your purchase page</li>
                 </ol>
             </p>
 
@@ -40,8 +37,10 @@ const ReadMe = props => {
             <p>
                 My partner is Guy Itzhaki, ID: 206292864. <br/>
                 Guy and I worked together on the design of the system, initial set up of express, mongo (hosted in atlas), and React.js.
-                From there each one took responsibility of a different screen (FE + BE) allowing both tof us to task responsibility of entire pages and doing the routing + FE work.
+                From there each one took responsibility of a different screen (FE + BE) allowing both of us to take responsibility of entire pages and doing the routing + FE work.
+                <br></br>
                 Maor's screens - Login/Sign Up page, About Us, Contact Us,
+                <br></br>
                 Guy's screens - Store and design, cart
             </p>
 

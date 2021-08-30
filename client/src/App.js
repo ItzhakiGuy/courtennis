@@ -11,9 +11,9 @@ import ReadMe from "./components/readme_maor/ReadMe";
 import AboutUs from "./components/aboutUs/aboutUs";
 import AdminPage from "./components/admin/adminPage";
 import CartPage from "./components/cart/cartPage";
-import ChekoutPage from "./components/chekout/chekoutPage";
+import CheckoutPage from "./components/chekout/checkoutPage";
 import ContactUsPage from "./components/contactUs/contactUsPage";
-import GoodbyePage from "./components/goodbye/goodbyePage";
+import ThankYou from "./components/thankYou/thankYou";
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
             <Route path="/register" component={SignUpPage}/>
             <Route path="/readme.html" component={ReadMe}/>
             <SecuredAdminRoute path="/admin" component={AdminPage}/>
-            <SecuredRoute path="/goodbye" component={GoodbyePage}/>
-            <SecuredRoute path="/checkout" component={ChekoutPage}/>
+            <SecuredRoute path="/thankYou" component={ThankYou}/>
+            <SecuredRoute path="/checkout" component={CheckoutPage}/>
             <SecuredRoute path="/cart" component={CartPage}/>
             <SecuredRoute path="/aboutus" component={AboutUs}/>
             <SecuredRoute path="/contactus" component={ContactUsPage}/>

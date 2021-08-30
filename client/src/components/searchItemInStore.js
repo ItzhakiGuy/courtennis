@@ -18,7 +18,7 @@ class SearchItemInStore extends Component {
                 </div>
                 <div className="cart-items-container">
                         <h3 className="filter-result">{cartCount}</h3>
-                        <h3 className="filter-result">Left in your cart</h3>
+                        <h3 className="filter-result">items in your cart</h3>
                 </div>
                 <Button variant="contained" color="primary" disableElevation onClick={onClearCart}>
                     <RemoveShoppingCartIcon /> Empty Cart

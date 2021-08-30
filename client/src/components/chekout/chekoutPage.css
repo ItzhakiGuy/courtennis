@@ -11,8 +11,10 @@
 	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
-	width: 50%;
+	width: 70%;
 	flex-direction: column;
+	margin-left: 180px;
+
 }
 
 .payment-container h3 {
@@ -24,8 +26,10 @@
 	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
-	width: 50%;
+	width: 70%;
 	flex-direction: column;
+	margin-left: 180px;
+
 }
 
 .shipping-address-container h3 {
@@ -37,8 +41,9 @@
 	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
-	width: 50%;
+	width: 70%;
 	flex-direction: column;
+	margin-left: 180px;
 }
 
 .review-order-container h3 {
@@ -50,9 +55,8 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 25px;
-	margin-left: 5px;
 	margin-right: 5px;
-	background-color: #d9dbff;
+	background-color: #d1d2db;
 }
 
 .review-order-container td,
@@ -71,9 +75,11 @@
 	text-align: center;
 	background-color: #d2f0e3;
 	color: black;
+	font-size: larger;
 }
 
 .review-order-container button {
-	background-color: #cdf3f3;
+	background-color: #65d567;
+	font-size: larger;
 }
 
