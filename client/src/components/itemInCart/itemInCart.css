@@ -46,9 +46,9 @@
 }
 
 .cart-item-image-container img {
-	height: 180px;
+	height: 250px;
 	width: 80%;
-	object-fit: cover;
+	object-fit: scale-down;
 	border-style: none;
 	margin: auto 0 auto 20px;
 }

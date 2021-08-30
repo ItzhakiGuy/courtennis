@@ -2,6 +2,33 @@ import React, { useState } from "react";
 import "./chekoutPage.css";
 import axios from "axios";
 import authenticationService from "../services/AuthenticationService.js";
+import { Input } from '@material-ui/core';
+
+const columns = [
+    { id: 'name', label: 'Name', minWidth: 170 },
+    { id: 'code', label: 'ISO\u00a0Code', minWidth: 100 },
+    {
+      id: 'Card Holder',
+      label: 'cardHolder',
+      minWidth: 170,
+      align: 'right',
+      format: (value) => value.toLocaleString('en-US'),
+    },
+    {
+      id: 'Credit Number',
+      label: 'cardNumber',
+      minWidth: 170,
+      align: 'right',
+      format: (value) => value.parseInt(),
+    },
+    {
+      id: 'density',
+      label: 'Density',
+      minWidth: 170,
+      align: 'right',
+      format: (value) => value.toFixed(2),
+    },
+  ];
 
 const ChekoutPage = props => {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [],
@@ -40,7 +67,6 @@ const ChekoutPage = props => {
             let purchaseResponse;
             let price = calculateTotalCost(cartItems).toLocaleString();
 
-            console.log(authenticationService.getEmail());
             const email = authenticationService.getEmail();
 
             const body = {
@@ -53,7 +79,8 @@ const ChekoutPage = props => {
                 .catch((error) => {
                     if (error.response && error.response.data) {
                         return error.response.data;
-                    } else {
+                    } 
+                    else {
                         return {
                             "success": false,
                             "message": "Could not reach server!",
@@ -73,6 +100,7 @@ const ChekoutPage = props => {
 
             <div className='payment-container checkout-card'>
                 <h3>Payment Information</h3>
+                <Input label="Cardholder's Name" type="text" name="name" />
                 <input type="text" id="cardholder-name" placeholder="NAME ON CARD"
                     onChange={event => setCardHolder(event.target.value)} />
                 <input type="text" id="card-number" placeholder="CREDIT CARD NUMBER"
@@ -117,8 +145,12 @@ const ChekoutPage = props => {
 
             </div>
         </div>
+
+        
+    
     );
 
 };
+
 
 export default ChekoutPage;

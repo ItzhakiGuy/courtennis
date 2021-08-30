@@ -15,7 +15,8 @@ const LoginPage = props => {
         if (!username) {
             alert("Missing username");
             return;
-        } else if (!password) {
+        } 
+        else if (!password) {
             alert("Missing password");
             return;
         }
@@ -23,7 +24,8 @@ const LoginPage = props => {
         const response = await authenticationService.login(username, password, rememberMe);
         if (authenticationService.isUserLoggedIn()) {
             props.history.push("/");
-        } else {
+        } 
+        else {
             alert(response.message);
         }
     };
@@ -67,7 +69,8 @@ const LoginPage = props => {
 
     if (isAuthenticated === null) {
         return null;
-    } else {
+    } 
+    else {
         return <div className="login">
             <div className="site-login-container">
                 <img className="login-logo" src={process.env.PUBLIC_URL + "/courtennis-logo.png"} />
