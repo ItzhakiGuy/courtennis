@@ -1,5 +1,5 @@
 .goodbye-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
 	flex-direction: column;
@@ -9,18 +9,18 @@
 }
 
 .goodbye-container h1{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 }
 
 .goodbye-message {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	color: #575757;
 }
 
 .back-to-store-button {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	color: white;
 	height: 60px;
@@ -29,7 +29,7 @@
 }
 
 .back-to-store-button:hover {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	color: rgb(246, 248, 237);
 	background-color: #a6edff;

@@ -1,5 +1,5 @@
 body {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	margin: 0;
 }
@@ -45,7 +45,7 @@ html {
 }
 
 .header-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -69,25 +69,25 @@ html {
 }
 
 .title {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	color: grey;
 }
 
 .description {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: bolder;
 	color: black;
 }
 
 .container h2 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	color: black;
 }
 
 .header-container h1 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	font-size: 45px;
 }

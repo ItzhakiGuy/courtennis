@@ -62,13 +62,14 @@ export const Navigation = () => {
                 </Link>
                 </Fab>
             
-                {authenticationService.isUserAdmin() && 
+                {/* {authenticationService.isUserAdmin() &&  */}
                 <Fab variant="extended" className={"admin-link"}>
                     <Link to="/admin">
                         <SupervisorAccountIcon />
                         Admin
                     </Link>
-                </Fab>}
+                </Fab>
+                {/* } */}
                 <Fab variant="extended">
                     <Link to="/readme.html">
                         Readme
