@@ -73,7 +73,7 @@ const LoginPage = props => {
     else {
         return <div className="login">
             <div className="site-login-container">
-                <img className="login-logo" src={process.env.PUBLIC_URL + "/courtennis-logo.png"} />
+                <img className="login-logo" src={process.env.PUBLIC_URL + "/courtennis-logo.png"} alt={"Courtennis logo"} />
                 <input type="text" id='username' placeholder="Username" onChange={changedUsername}
                     onKeyDown={handleKeyDown} />
                 <input type="password" id="password" placeholder="Password" onChange={changedPassword}
