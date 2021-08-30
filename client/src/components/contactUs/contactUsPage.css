@@ -43,7 +43,6 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-<<<<<<< HEAD
 .row:after {
     content: "";
     display: table;
@@ -55,8 +54,6 @@ input[type=submit]:hover {
     height: 350px;
 }
 
-=======
->>>>>>> 9a31e68cd6f30d68d329c0fa082651681e2054d6
 @media screen and (max-width: 600px) {
     .column, input[type=submit] {
         width: 100%;
