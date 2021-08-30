@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import "./chekoutPage.css";
-import axios from "axios";
-import authenticationService from "../services/AuthenticationService.js";
-import { Input } from '@material-ui/core';
 
 const CheckoutPage = props => {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [],
-        [cardNumber, setCardNumber] = useState(null),
-        [country, setCountry] = useState(null),
-        [address, setAddress] = useState(null),
+        [, setCardNumber] = useState(null),
+        [, setCountry] = useState(null),
+        [, setAddress] = useState(null),
 
         clickedPlaceOrder = async () => {
             localStorage.clear();

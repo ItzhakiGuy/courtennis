@@ -14,7 +14,7 @@ const ItemInCart = props => {
                 <h1 className="item-name">{props.name}</h1>
                 <h3>Price: {props.price}$</h3>
                 <div className="quantity-container">
-                    <h3>Quantity in Cart: </h3>
+                    <h3>Quantity: </h3>
                     <input type="number" id="quantity" key={props.name} className="amount-input"
                         min="1" max="50" defaultValue={props.quantity} onKeyDown={(event) => event.preventDefault()}
                         onChange={event => props.onHandleQuantityChange(event, props.name)} />

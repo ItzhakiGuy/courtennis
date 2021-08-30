@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import tennis from './routes/products.js';
 import auth from './routes/auth.js';
+import users from './routes/users.js'
 import User from './models/user.js';
 import flash from 'connect-flash';
 import session from 'express-session'
@@ -34,6 +35,7 @@ const CONNECTION_URL = "mongodb+srv://maor:Michael1995@cluster0.lwknm.mongodb.ne
 //REQUIRING ROUTES
 app.use(tennis);
 app.use(auth);
+app.use(users)
 
 mongoose.connect(CONNECTION_URL, {
   useNewUrlParser: true,

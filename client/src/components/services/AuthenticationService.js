@@ -3,7 +3,7 @@ import axios from 'axios';
 class AuthenticationService {
 
     constructor() {
-        this.email = null;
+        this.username = null;
         this.authenticated = null;
         this.loginStatusObservers = [];
     }
@@ -68,7 +68,7 @@ class AuthenticationService {
     }
 
     isUserAdmin() {
-        return this.email === 'admin';
+        return this.username === 'admin';
     }
 
     registerForLoginStatusChangedEvent(callback) {
@@ -76,7 +76,7 @@ class AuthenticationService {
     }
 
     getEmail() {
-        return this.email;
+        return this.username;
     }
 
 }

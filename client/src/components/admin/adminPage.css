@@ -1,20 +1,10 @@
-.search-bar-container {
-  height: 100%;
-  margin-left: 400px;
-  margin-right: 400px;
-}
-
 .admin-container h2 {
   font-family: 'Segoe UI';
   font-weight: lighter;
   font-size: 30px;
-}
-
-.search-bar-title {
-  font-family: 'Segoe UI';
-  font-weight: lighter;
-  font-size: 2.5em;
-  color: white;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .admin-container .table {
@@ -26,6 +16,7 @@
   text-align: center;
   border-collapse: collapse;
   width: 70rem;
+  margin-bottom: 40px;
 }
 
 .admin-container th,
@@ -35,20 +26,19 @@
   font-size: 1.2rem;
   text-align: center;
   border: 1px solid rgb(91, 128, 121);
-  background-color: turquoise;
+  background-color: #d0a9ea;
   padding: 8px;
 }
 .admin-container tr.red th {
   font-family: 'Segoe UI';
   font-weight: lighter;
-  background: red(191, 163, 193);
-  color: rgb(158, 158, 212);
+  color: rgb(255, 255, 255);
   padding: 10px;
 }
 .admin-container th {
   font-family: 'Segoe UI';
   font-weight: lighter;
-  background: #b0ddcc;
+  background: #000000;
   position: sticky;
   top: 0;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);

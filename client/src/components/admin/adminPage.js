@@ -7,37 +7,16 @@ class AdminPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            purchases: [],
+            usernames: [],
         };
     }
 
-    handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            const input = event.target.value;
-            const filteredPurchases = this.originalData.filter(purchaseLog => {
-                if (!purchaseLog.email) return false;
-                return purchaseLog.email.toLowerCase().includes(input)
-            });
-
-            if (input) {
-                this.setState({
-                    purchases: filteredPurchases
-                })
-            } else {
-                this.setState({
-                    purchases: this.originalData
-                })
-            }
-
-        }
-    }
-
     componentDidMount() {
-        axios.get(`/purchase`)
+        axios.get(`/users`)
             .then(res => {
-                const purchases = res.data;
-                this.originalData = purchases;
-                this.setState({ purchases })
+                const usernames = res.data.usersList;
+                this.originalData = usernames;
+                this.setState({ usernames })
             })
             .catch((error) => {
                 if (error.response && error.response.data) {
@@ -54,29 +33,16 @@ class AdminPage extends React.Component {
             <div className='admin-container'>
                 <h2>Admin Page</h2>
 
-                <div className='search-bar-container'>
-                    <h1 className='search-bar-title'>{this.props.header}</h1>
-                    < input type="text" className='search-bar' placeholder={"Filter by user"} onKeyDown={this.handleKeyPress} />
-                </div>
-
                 <table className="table">
                     <thead>
                         <tr className="red">
-                            <th>Email</th>
-                            <th>Order ID</th>
-                            <th>Purchase time</th>
-                            <th>Items Ordered</th>
-                            <th>Order Price</th>
+                            <th>All Store Usernames</th>
                         </tr>
                     </thead>
                     <tbody className="table">
-                        {this.state.purchases.map(product => (
+                        {this.state.usernames.map(username => (
                             <tr>
-                                <td>{product.email}</td>
-                                <td>{product.id}</td>
-                                <td>{product.time}</td>
-                                <td>{product.purchase.map(item => (`${item._id} - ${item.count} `))}</td>
-                                <td>{product.price}$</td>
+                                <td>{username}</td>
                             </tr>
                         ))}
                     </tbody>

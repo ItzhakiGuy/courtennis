@@ -19,7 +19,7 @@ class ContactUsPage extends React.Component {
                             </FormLabel>
                             <FormLabel>
                                 Email:
-                                <input type="text" name="email" placeholder="Email address"/>
+                                <input type="text" name="username" placeholder="Email address"/>
                             </FormLabel>
                             <FormLabel>
                                 Comment:
