@@ -10,9 +10,8 @@ import ExitToAppTwoToneIcon from '@material-ui/icons/ExitToAppTwoTone';
 import ContactMailTwoToneIcon from '@material-ui/icons/ContactMailTwoTone';
 import BlurOnTwoToneIcon from '@material-ui/icons/BlurOnTwoTone';
 import FeaturedPlayListTwoToneIcon from '@material-ui/icons/FeaturedPlayListTwoTone';
-
 import Fab from '@material-ui/core/Fab';
-import { blueGrey, lightBlue, lightGreen } from "@material-ui/core/colors";
+
 
 export const Navbar = () => {
 
