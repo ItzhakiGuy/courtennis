@@ -75,10 +75,6 @@ class AuthenticationService {
         this.loginStatusObservers.push(callback);
     }
 
-    getEmail() {
-        return this.username;
-    }
-
 }
 
 function notifyLoginStatusChanged(service) {
