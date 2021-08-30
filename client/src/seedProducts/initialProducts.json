@@ -2,73 +2,73 @@
   "products": [
     {
       "_id": "class100s",
-      "image": "/wilson_rackets/clash100s.jpeg",
+      "image": "/products_images/wilson_rackets/clash100s.jpeg",
       "title": "Wilson Clash 100S",
       "price": 200
     },
     {
       "_id": "ultra100",
-      "image": "/wilson_rackets/ultra100.jpeg",
+      "image": "/products_images/wilson_rackets/ultra100.jpeg",
       "title": "Wilson Ultra 100 Roland Garros",
       "price": 179
     },
     {
       "_id": "prostaff",
-      "image": "/wilson_rackets/prostaff.jpeg",
+      "image": "/products_images/wilson_rackets/prostaff.jpeg",
       "title": "Wilson Pro Staff 97 v13",
       "price": 349
     },
     {
       "_id": "blade98",
-      "image": "/wilson_rackets/blade98.jpeg",
+      "image": "/products_images/wilson_rackets/blade98.jpeg",
       "title": "Wilson Blade 98 18x20 v7",
       "price": 250
     },
     {
       "_id": "lx1000",
-      "image": "/dunlop_rackets/lx1000.jpeg",
+      "image": "/products_images/dunlop_rackets/lx1000.jpeg",
       "title": "Dunlop LX 1000",
       "price": 299
     },
     {
       "_id": "cx200",
-      "image": "/dunlop_rackets/cx200.jpeg",
+      "image": "/products_images/dunlop_rackets/cx200.jpeg",
       "title": "Dunlop CX 200 Tour 18x20",
       "price": 219
     },
     {
       "_id": "sx300",
-      "image": "/dunlop_rackets/sx300.jpeg",
+      "image": "/products_images/dunlop_rackets/sx300.jpeg",
       "title": "Dunlop SX 300",
       "price": 199
     },
     {
       "_id": "fx500",
-      "image": "/dunlop_rackets/fx500.jpeg",
+      "image": "/products_images/dunlop_rackets/fx500.jpeg",
       "title": "Dunlop FX 500",
       "price": 134
     },
     {
       "_id": "tf-x1_300",
-      "image": "/tecnifibre_rackets/tf-x1_300.jpeg",
+      "image": "/products_images/tecnifibre_rackets/tf-x1_300.jpeg",
       "title": "Tecnifibre TF-X1 300",
       "price": 219
     },
     {
       "_id": "tf40_305",
-      "image": "/tecnifibre_rackets/tf40_305.jpeg",
+      "image": "/products_images/tecnifibre_rackets/tf40_305.jpeg",
       "title": "Tecnifibre TF40 305",
       "price": 229
     },
     {
       "_id": "trebound_298",
-      "image": "/tecnifibre_rackets/trebound_298.jpeg",
+      "image": "/products_images/tecnifibre_rackets/trebound_298.jpeg",
       "title": "Tecnifibre TRebound 298 Iga",
       "price": 209
     },
     {
       "_id": "tfight_295_rs",
-      "image": "/tecnifibre_rackets/tfight_295_rs.jpeg",
+      "image": "/products_images/tecnifibre_rackets/tfight_295_rs.jpeg",
       "title": "Tecnifibre TFight 295 RS",
       "price": 209
     }
