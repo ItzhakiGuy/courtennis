@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./cartPage.css";
 import ItemInCart from "../itemInCart/itemInCart";
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import { Button } from "@material-ui/core";
 
 const CartPage = props => {
@@ -31,7 +32,7 @@ const CartPage = props => {
             <div className="cart-information-box">
                 <h2>Subtotal for {numOfItems(cartItems)} items: ${totalToPay(cartItems).toLocaleString()} </h2>
                 <Button variant="contained" color="primary" disableElevation onClick={handleCheckoutButtonClick} disabled={numOfItems(cartItems) <= 0}>
-                    Checkout
+                    <MonetizationOnIcon /> Checkout
                 </Button>
             </div>
         </div>
