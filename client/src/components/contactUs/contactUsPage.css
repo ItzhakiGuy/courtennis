@@ -16,7 +16,7 @@ input[type=text], select, textarea {
 input[type=submit] {
     font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
-    background-color: #bddbec;
+    background-color: #b83f3f;
     font-size: 18px;
     color: rgb(253, 253, 250);
     padding: 12px 20px;
@@ -25,12 +25,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #c9eef7;
+    background-color: rgba(19, 193, 7, 0.35);
 }
 
 .container {
     border-radius: 5px;
-    background-color: #bedbf3;
+    background-color: rgba(153, 153, 153, 0.6);
     padding: 10px;
     min-height: 90%;
 }
@@ -38,10 +38,12 @@ input[type=submit]:hover {
 .column {
     float: left;
     width: 50%;
-    margin-top: 6px;
+    margin-top: 20px;
+    margin-left: 400px;
     padding: 20px;
 }
 
+<<<<<<< HEAD
 .row:after {
     content: "";
     display: table;
@@ -53,9 +55,14 @@ input[type=submit]:hover {
     height: 350px;
 }
 
+=======
+>>>>>>> 9a31e68cd6f30d68d329c0fa082651681e2054d6
 @media screen and (max-width: 600px) {
     .column, input[type=submit] {
         width: 100%;
-        margin-top: 0;
+        height: 100%;
     }
+}
+h2 {
+    width: 92%;
 }

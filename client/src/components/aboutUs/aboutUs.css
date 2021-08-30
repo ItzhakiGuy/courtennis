@@ -31,7 +31,6 @@ html {
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	width: 400px;
 	margin: 28px 8px 8px 28px;
 }
 
@@ -55,7 +54,7 @@ html {
 }
 
 .team-container {
-	background-color: rgba(192, 243, 252, 0.705);
+	background-color: rgba(221, 224, 224, 0.7);
 	justify-content: space-around;
 }
 
@@ -77,8 +76,8 @@ html {
 
 .description {
 	font-family: 'Quicksand', sans-serif;
-	font-weight: lighter;
-	color: grey;
+	font-weight: bolder;
+	color: black;
 }
 
 .container h2 {
