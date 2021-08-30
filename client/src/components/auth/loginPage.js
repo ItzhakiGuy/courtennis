@@ -84,7 +84,9 @@ const LoginPage = props => {
                         onKeyDown={handleKeyDown} />
                     <span className="checkmark" />
                 </label>
-                <Button variant="contained" type="button" className="login-button" onClick={loginClicked}>LOGIN</Button>
+                <div className="button-down">
+                    <Button variant="contained" type="button" className="login-button" onClick={loginClicked}>LOGIN</Button>
+                </div>
                 <Button variant="contained" type="sign-up" className="signup-button" onClick={signUpClicked}>SIGN UP</Button>
             </div>
         </div>;

@@ -1,11 +1,11 @@
 .product-price.info.price h6 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   color: #cffff1;
 }
 
 .product-price.info.info-cart h6 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   color: #cfffeb;
 }
@@ -19,7 +19,7 @@
 
 .product {
   background-color: #c8fdff;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
 }
 
 .product-title {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   font-size: 1.5rem;
   color: #d9fff1;
@@ -76,7 +76,7 @@
 }
 
 #remove-button {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   width: 70%;
   height: 40px;
@@ -93,21 +93,21 @@
 }
 
 .sale-price {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: bold;
   color: rgb(241, 255, 209);
   align-content: center;
 }
 
 .original-price {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   color: #e0fffa;
   align-content: center;
 }
 
 .add-button {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   color: white;
   width: 100%;

@@ -1,5 +1,5 @@
 .checkout-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
 	align-content: center;
@@ -8,7 +8,7 @@
 }
 
 .payment-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
 	width: 50%;
@@ -16,12 +16,12 @@
 }
 
 .payment-container h3 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 }
 
 .shipping-address-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
 	width: 50%;
@@ -29,12 +29,12 @@
 }
 
 .shipping-address-container h3 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 }
 
 .review-order-container {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	display: flex;
 	width: 50%;
@@ -42,7 +42,7 @@
 }
 
 .review-order-container h3 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 }
 
@@ -57,7 +57,7 @@
 
 .review-order-container td,
 .review-order-container th {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	border: 1px solid #f3f5dc;
 	background-color: white;
@@ -65,7 +65,7 @@
 }
 
 .review-order-container th {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Segoe UI';
 	font-weight: lighter;
 	padding: 12px 12px;
 	text-align: center;

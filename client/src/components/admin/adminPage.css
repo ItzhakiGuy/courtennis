@@ -5,20 +5,20 @@
 }
 
 .admin-container h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   font-size: 30px;
 }
 
 .search-bar-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   font-size: 2.5em;
   color: white;
 }
 
 .admin-container .table {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   table-layout: fixed;
   margin-left: auto;
@@ -30,7 +30,7 @@
 
 .admin-container th,
 .admin-container td {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   font-size: 1.2rem;
   text-align: center;
@@ -39,14 +39,14 @@
   padding: 8px;
 }
 .admin-container tr.red th {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   background: red(191, 163, 193);
   color: rgb(158, 158, 212);
   padding: 10px;
 }
 .admin-container th {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI';
   font-weight: lighter;
   background: #b0ddcc;
   position: sticky;
