@@ -9,8 +9,10 @@ import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 import ExitToAppTwoToneIcon from '@material-ui/icons/ExitToAppTwoTone';
 import ContactMailTwoToneIcon from '@material-ui/icons/ContactMailTwoTone';
 import BlurOnTwoToneIcon from '@material-ui/icons/BlurOnTwoTone';
+import FeaturedPlayListTwoToneIcon from '@material-ui/icons/FeaturedPlayListTwoTone';
 
 import Fab from '@material-ui/core/Fab';
+import { blueGrey, lightBlue, lightGreen } from "@material-ui/core/colors";
 
 export const Navbar = () => {
 
@@ -63,21 +65,21 @@ export const Navbar = () => {
                     
                 </Link>
 
-                <Link to="/admin">
-                {/* {authenticationService.isUserAdmin() &&  */}
-                    <Fab variant="extended" className={"admin-link"}>
-                        <SupervisorAccountIcon />
-                        Admin
-                    </Fab>
-                </Link>
-                {/* } */}
-
                 <Link to="/readme.html">
                     <Fab variant="extended">
+                        <FeaturedPlayListTwoToneIcon />
                         Readme
                     </Fab>
                 </Link>
 
+                {authenticationService.isUserAdmin() &&  
+                    <Link to="/admin">
+                        <Fab variant="extended" className={"admin-link"} color="primary" >
+                            <SupervisorAccountIcon />
+                            Admin
+                        </Fab>
+                    </Link>
+                }
                 <Link className="logout-button" onClick={handleLogout}>
                     <Fab variant="extended">
                         <ExitToAppTwoToneIcon />
