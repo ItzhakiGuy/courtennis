@@ -77,3 +77,9 @@
 	font-size: 80px;
 	margin-top: 80px;
 }
+
+.cart-items-container {
+	display: flex;
+	align-self: flex-end;
+	padding-left: 900px;
+}
