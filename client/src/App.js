@@ -14,6 +14,7 @@ import CartPage from "./components/cart/cartPage";
 import CheckoutPage from "./components/checkout/checkoutPage";
 import ContactUsPage from "./components/contactUs/contactUsPage";
 import ThankYou from "./components/thankYou/thankYou";
+import Feedback from "./components/feedback/feedback";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <SecuredRoute path="/cart" component={CartPage}/>
             <SecuredRoute path="/aboutus" component={AboutUs}/>
             <SecuredRoute path="/contactus" component={ContactUsPage}/>
+            <SecuredRoute path="/feedback" component={Feedback}/>
             <SecuredRoute path="/" component={Browse}/>
           </Switch>
         </div>

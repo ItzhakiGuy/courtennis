@@ -5,7 +5,7 @@
   "main": "server/app.js",
   "scripts": {
     "client": "cd client && npm start",
-    "server": "cd server && nodemon server.js",
+    "server": "cd server && nodemon app.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "node": "^16.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
   }
 }

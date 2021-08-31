@@ -17,7 +17,7 @@ class SearchItemInStore extends Component {
                                onChange={onChange} />
                     
                 </div>
-                <Fab variant="extended" className="cart-items-container">
+                <Fab variant="extended" className="cart-items-container" disableFocusRipple>
                     {cartCount} Items in your cart
                 </Fab>
                 <Button variant="contained" color="primary" disableElevation onClick={onClearCart}>

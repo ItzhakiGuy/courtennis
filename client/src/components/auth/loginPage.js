@@ -64,7 +64,7 @@ const LoginPage = props => {
             .then(res => {
                 console.log("Login success with cookies")
             });
-    }, []);
+    }, [props.history]);
 
 
     if (isAuthenticated === null) {
