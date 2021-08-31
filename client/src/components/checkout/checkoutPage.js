@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import "./chekoutPage.css";
+import { Box } from '@material-ui/core/';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import { Button } from '@material-ui/core/';
+
 
 const CheckoutPage = props => {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [],
@@ -18,7 +26,7 @@ const CheckoutPage = props => {
 
 
     return (
-        <div className='checkout-container'>
+        <Box component="div" display="block" className='checkout-container'>
             <div className='payment-container checkout-card'>
                 <h3>Payment Information</h3>
                 <input type="text" id="card-number" placeholder="CREDIT CARD NUMBER"
@@ -36,29 +44,33 @@ const CheckoutPage = props => {
 
             <div className="review-order-container checkout-card">
                 <h3>Your order</h3>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th># of Items</th>
-                        <th>Total</th>
-                    </tr>
+                <Table>
+                    <TableHead>
+                    <TableRow>
+                        <TableCell>Item</TableCell>
+                        <TableCell>Price</TableCell>
+                        <TableCell># of Items</TableCell>
+                        <TableCell>Total</TableCell>
+                    </TableRow>
+                    </TableHead>
+                    <TableBody>
                     {cartItems.map(item => {
-                        return <tr>
-                            <td>{item.title}</td>
-                            <td>{item.price}</td>
-                            <td>{item.count}</td>
-                            <td>{(parseFloat(item.count) * parseFloat(item.price)).toLocaleString()}$</td>
-                        </tr>
+                        return <TableRow>
+                            <TableCell>{item.title}</TableCell>
+                            <TableCell>{item.price}</TableCell>
+                            <TableCell>{item.count}</TableCell>
+                            <TableCell>{(parseFloat(item.count) * parseFloat(item.price)).toLocaleString()}$</TableCell>
+                        </TableRow>
                     }
                     )}
-                </table>
+                    </TableBody>
+                </Table>
                 <h1>{calculateTotalCost(cartItems).toLocaleString()}$</h1>
 
-                <button type="button" className="comp-button" onClick={clickedPlaceOrder}>Complete My Order</button>
+                <Button variant="contained" type="button" className="finish-button" onClick={clickedPlaceOrder}>Complete My Order</Button>
 
             </div>
-        </div>
+        </Box>
 
         
     
