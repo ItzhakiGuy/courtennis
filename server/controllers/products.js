@@ -18,14 +18,14 @@ export const getAllProducts = async (req, res) => {
 
 
 export const addProduct = async (req, res) => {
-    const newProduct = new Product({ name: req.body.name, price: req.body.price, image: req.body.price, description: req.body.description });
+    const newProduct = new Product({ name: req.body.name, price: req.body.price, image: req.body.image });
     try{
         await Product.create(newProduct, (err, product) => {
             if(err){
                 console.log(err)
             }
             else{
-                res.send(product.name + "was created successfully")
+                res.send(product.name + " was created successfully")
             }
         });
     }

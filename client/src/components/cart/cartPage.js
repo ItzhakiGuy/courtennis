@@ -7,15 +7,15 @@ import { Button } from "@material-ui/core";
 const CartPage = props => {
     const itemsFromStorage = JSON.parse(localStorage.getItem("cartItems")) || [],
         [cartItems, updateCartItems] = useState(itemsFromStorage),
-        handleCheckoutButtonClick = (event) => {
+        handleCheckoutButtonClick = () => {
             props.history.push("/checkout");
         }, itemRemoved = (event, itemToRemove) => {
-            const currentCartItems = cartItems.filter(item => item.title !== itemToRemove);
+            const currentCartItems = cartItems.filter(item => item.name !== itemToRemove);
             updateCartItems(currentCartItems);
             localStorage.setItem("cartItems", JSON.stringify(currentCartItems));
         }, numberOfItemsChange = (event, nameOfUpdatedItem) => {
             const currentCartItems = [...cartItems];
-            const itemToUpdate = currentCartItems.find(item => item.title === nameOfUpdatedItem);
+            const itemToUpdate = currentCartItems.find(item => item.name === nameOfUpdatedItem);
             itemToUpdate.count = event.target.value;
             updateCartItems(currentCartItems);
             localStorage.setItem("cartItems", JSON.stringify(currentCartItems));
@@ -38,9 +38,9 @@ const CartPage = props => {
         </div>
 
         <div className="cart-list-container">
-            {cartItems.map((item, index) => {
+            {cartItems.map((item) => {
                 return <ItemInCart
-                    name={item.title}
+                    name={item.name}
                     image={item.image}
                     price={item.price}
                     quantity={item.count}

@@ -71,3 +71,10 @@
 	margin: 0;
 	padding: 0;
 }
+.MuiButton-label {
+	font-size: 13px;
+	width: 100%;
+	display: inherit;
+	align-items: inherit;
+	justify-content: inherit;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ReadMe.css';
 
-const ReadMe = props => {
+const ReadMe = () => {
 
     return (
         <div className='readme-container'>
@@ -21,6 +21,7 @@ const ReadMe = props => {
                     read a bit about the brand and about us the founders.</li>
                     <li>A "Contact Us" page in which our users can leave their comments about the website!</li>
                     <li>Thank you for your purchase page</li>
+                    <li>Valuable feedback page - just fill in the contact us form</li>
                 </ol>
             </p>
 
@@ -44,25 +45,19 @@ const ReadMe = props => {
                 Guy's screens - Store and design, cart
             </p>
 
-            <h3>Did you implement the store using react.js?</h3>
-            <p>
-                Yes, our store was implemented using React.js.
-            </p>
-
             <h3>Specify all the different routes your app supports</h3>
             <p>
                 GET routes: <br/>
                 <ol>
-                    <li>Logout - api/logout</li>
-                    <li>Admin - api/admin/users</li>
-                    <li>Admin - api/admin/user:id</li>
-                    <li>Purchase - api/purchase</li>
+                    <li>Login - /Login</li>
+                    <li>Logout - /logout</li>
+                    <li>Admin - /admin/users</li>
                 </ol>
                 POST routes:
                 <ol>
-                    <li>Sign Up - register</li>
-                    <li>Login - login</li>
-                    <li>Purchase - purchase</li>
+                    <li>Sign Up - /register</li>
+                    <li>Login - /login</li>
+                    <li>Purchase - /purchase</li>
                 </ol>
             </p>
         </div>

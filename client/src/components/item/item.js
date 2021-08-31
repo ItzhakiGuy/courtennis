@@ -34,12 +34,12 @@ export default class Item extends Component {
                   <CardMedia
                     component="img"
                     image={item.image}
-                    alt={item.title}
-                    title={item.title}
+                    alt={item.name}
+                    title={item.name}
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {item.title}
+                        {item.name}
                     </Typography>
                     
                     <Typography variant="body3" color="textSecondary" component="p">

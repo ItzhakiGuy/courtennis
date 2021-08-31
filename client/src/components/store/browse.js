@@ -1,28 +1,38 @@
 import React from 'react';
-import data from '../../seedProducts/initialProducts.json'
 import './browse.css';
 import SearchItemInStore from "../searchBar/searchItemInStore";
 import ProductContainer from "./productContainer";
-
+import axios from "axios";
 
 class Browse extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
-            products: data.products,
-            filteredProducts: data.products,
+            products: [],
+            filteredProducts: [],
             searchTerm: "",
-            searchCount: data.products.length,
+            searchCount: 0,
             cartItems: JSON.parse(localStorage.getItem("cartItems")) ?
                 JSON.parse(localStorage.getItem("cartItems")) : []
         };
+    }
+
+    componentDidMount() {
+        axios.get("/products").then(res => {
+            this.setState({
+                products: res.data,
+                filteredProducts: res.data,
+                searchCount: res.data.length
+            })
+        })
     }
 
     editSearchTerm = (event) => {
         const searchTerm = event.target.value;
         this.setState({
             searchTerm,
-            filteredProducts: this.state.products.filter(product => product.title.toLowerCase().includes(searchTerm.toLowerCase()))
+            filteredProducts: this.state.products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
         });
 
     };
