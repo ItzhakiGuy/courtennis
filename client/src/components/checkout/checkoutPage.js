@@ -68,7 +68,7 @@ const CheckoutPage = props => {
                     <TableBody>
                     {cartItems.map(item => {
                         return <TableRow>
-                            <TableCell>{item.title}</TableCell>
+                            <TableCell>{item.name}</TableCell>
                             <TableCell>{item.price}</TableCell>
                             <TableCell>{item.count}</TableCell>
                             <TableCell>{(parseFloat(item.count) * parseFloat(item.price)).toLocaleString()}$</TableCell>
