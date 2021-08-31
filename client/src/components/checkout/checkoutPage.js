@@ -53,7 +53,7 @@ const CheckoutPage = props => {
 
             <div className="review-order-container">
                 <div className='details-header'>
-                    <ListAltTwoToneIcon />
+                    <ListAltTwoToneIcon id="icon"/>
                     <h3>Order Details</h3>
                 </div>
                 <Table>
