@@ -6,14 +6,17 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import { Button } from '@material-ui/core/';
-
+import { Button, TextField  } from '@material-ui/core/';
+import AccountBalanceTwoToneIcon from '@material-ui/icons/AccountBalanceTwoTone';
+import ListAltTwoToneIcon from '@material-ui/icons/ListAltTwoTone';
+import LocalShippingTwoToneIcon from '@material-ui/icons/LocalShippingTwoTone';
 
 const CheckoutPage = props => {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [],
+        [, setName] = useState(null),
+        [, setAddress] = useState(null),
         [, setCardNumber] = useState(null),
         [, setCountry] = useState(null),
-        [, setAddress] = useState(null),
 
         clickedPlaceOrder = async () => {
             localStorage.clear();
@@ -27,23 +30,32 @@ const CheckoutPage = props => {
 
     return (
         <Box component="div" display="block" className='checkout-container'>
-            <div className='payment-container checkout-card'>
-                <h3>Payment Information</h3>
-                <input type="text" id="card-number" placeholder="CREDIT CARD NUMBER"
+            <div className='shipping-address-container'>
+                <div className='shipping-header'>
+                    <LocalShippingTwoToneIcon />
+                    <h3>Shipping Information</h3>
+                </div>
+                <TextField id="name-input" placeholder="Name"
+                    onChange={event => setName(event.target.value)} />
+                <TextField type="text" id="shipping-address" placeholder="Shipping Address"
+                    onChange={event => setAddress(event.target.value)} />
+                <TextField type="text" id="shipping-country" placeholder="Country"
+                    onChange={event => setCountry(event.target.value)} />
+            </div>
+            <div className='payment-container'>
+                <div className='payment-header'>
+                    <AccountBalanceTwoToneIcon />
+                    <h3>Payment Information</h3>
+                </div>
+                <TextField  type="text" id="card-number" placeholder="Credit Card Number"
                     onChange={event => setCardNumber(event.target.value)} />
             </div>
 
-            <div className='shipping-address-container checkout-card'>
-                <h3>Shipping Information</h3>
-
-                <input type="text" id="shipping-country" placeholder="COUNTRY"
-                    onChange={event => setCountry(event.target.value)} />
-                <input type="text" id="shipping-address" placeholder="SHIPPING ADDRESS"
-                    onChange={event => setAddress(event.target.value)} />
-            </div>
-
-            <div className="review-order-container checkout-card">
-                <h3>Your order</h3>
+            <div className="review-order-container">
+                <div className='details-header'>
+                    <ListAltTwoToneIcon />
+                    <h3>Order Details</h3>
+                </div>
                 <Table>
                     <TableHead>
                     <TableRow>
@@ -65,7 +77,9 @@ const CheckoutPage = props => {
                     )}
                     </TableBody>
                 </Table>
-                <h1>{calculateTotalCost(cartItems).toLocaleString()}$</h1>
+                <div className="total-container">
+                    <h1>Total Price: {calculateTotalCost(cartItems).toLocaleString()}$</h1>
+                </div>
 
                 <Button variant="contained" type="button" className="finish-button" onClick={clickedPlaceOrder}>Complete My Order</Button>
 
