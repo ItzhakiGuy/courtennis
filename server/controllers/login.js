@@ -15,6 +15,6 @@ export const login = (req, res) => {
             }
         })
         .catch(() => {
-            res.json({success: false, error: 'no such username, please register'})
+            res.json({success: false, error: 'You need to be logged in to do that'})
         })
 }

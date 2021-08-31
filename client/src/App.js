@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import SecuredRoute from "./components/securedRouting/securedRoute";
-import SecuredAdminRoute from "./components/securedRouting/securedAdminRoute";
+import ProtectedRoute from "./components/protectedRouting/protectedRoute";
+import ProtectedAdminRoute from "./components/protectedRouting/protectedAdminRoute";
 import LoginPage from "./components/auth/loginPage";
 import SignUpPage from "./components/auth/signUpPage";
 import Navbar from "./components/navbar/navbar";
@@ -25,14 +25,14 @@ function App() {
             <Route path="/login" component={LoginPage}/>
             <Route path="/register" component={SignUpPage}/>
             <Route path="/readme.html" component={ReadMe}/>
-            <SecuredAdminRoute path="/admin" component={AdminPage}/>
-            <SecuredRoute path="/thankYou" component={ThankYou}/>
-            <SecuredRoute path="/checkout" component={CheckoutPage}/>
-            <SecuredRoute path="/cart" component={CartPage}/>
-            <SecuredRoute path="/aboutus" component={AboutUs}/>
-            <SecuredRoute path="/contactus" component={ContactUsPage}/>
-            <SecuredRoute path="/feedback" component={Feedback}/>
-            <SecuredRoute path="/" component={Browse}/>
+            <ProtectedAdminRoute path="/admin" component={AdminPage}/>
+            <ProtectedRoute path="/thankYou" component={ThankYou}/>
+            <ProtectedRoute path="/checkout" component={CheckoutPage}/>
+            <ProtectedRoute path="/cart" component={CartPage}/>
+            <ProtectedRoute path="/aboutus" component={AboutUs}/>
+            <ProtectedRoute path="/contactus" component={ContactUsPage}/>
+            <ProtectedRoute path="/feedback" component={Feedback}/>
+            <ProtectedRoute path="/" component={Browse}/>
           </Switch>
         </div>
       </Router>

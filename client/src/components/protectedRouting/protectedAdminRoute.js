@@ -1,8 +1,8 @@
 import React from "react";
-import {Route, Redirect} from "react-router-dom";
-import authenticationService from "../services/AuthenticationService.js";
+import { Route, Redirect } from "react-router-dom";
+import authenticationService from "../handlers/AuthenticationService";
 
-const SecuredRoute = ({
+const ProtectedAdminRoute = ({
     component: Component,
     ...rest
 }) => {
@@ -10,13 +10,14 @@ const SecuredRoute = ({
         <Route
             {...rest}
             render={props => {
-                if (authenticationService.isUserLoggedIn()) {
+                if (authenticationService.isUserLoggedIn() && authenticationService.isUserAdmin()) {
                     return <Component {...props} />;
                 } else {
+                    alert("Only admin can access this page");
                     return (
                         <Redirect
                             to={{
-                                pathname: "/login",
+                                pathname: "/",
                                 state: {
                                     from: props.location
                                 }
@@ -29,4 +30,4 @@ const SecuredRoute = ({
     );
 };
 
-export default SecuredRoute;
+export default ProtectedAdminRoute;

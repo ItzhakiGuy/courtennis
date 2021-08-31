@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./loginPage.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-import authenticationService from "../services/AuthenticationService";
+import authenticationService from "../handlers/AuthenticationService";
 
 function SignUpPage() {
     const [username, setUsername] = useState(null);

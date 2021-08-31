@@ -4,7 +4,6 @@ import cors from 'cors'
 import tennis from './routes/products.js';
 import auth from './routes/auth.js';
 import users from './routes/users.js'
-import User from './models/user.js';
 import flash from 'connect-flash';
 import session from 'express-session'
 

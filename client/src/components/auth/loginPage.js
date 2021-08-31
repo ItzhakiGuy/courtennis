@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './loginPage.css';
-import authenticationService from "../services/AuthenticationService";
+import authenticationService from "../handlers/AuthenticationService";
 import Button from '@material-ui/core/Button';
 
 const LoginPage = props => {
@@ -16,7 +16,7 @@ const LoginPage = props => {
             alert("Missing username");
             return;
         } 
-        else if (!password) {
+        if (!password) {
             alert("Missing password");
             return;
         }

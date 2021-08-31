@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class AuthenticationService {
+class AuthenticationHandler {
 
     constructor() {
         this.username = null;
@@ -26,7 +26,7 @@ class AuthenticationService {
             });
 
         this.authenticated = loginResponse.success;
-        if (this.authenticated) this.username = username;
+        if (this.authenticated) this.username = username
         notifyLoginStatusChanged(this);
 
         return loginResponse;
@@ -35,7 +35,6 @@ class AuthenticationService {
     async logout() {
         this.authenticated = false;
         this.username = null;
-        this.killCookie();
         notifyLoginStatusChanged(this);
 
         let logoutResponse;
@@ -53,14 +52,6 @@ class AuthenticationService {
             });
 
         return logoutResponse;
-    }
-
-    async killCookie() {
-        document.cookie.split(";").forEach((c) => {
-            document.cookie = c
-                .replace(/^ +/, "")
-                .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
-        });
     }
 
     isUserLoggedIn() {
@@ -81,4 +72,4 @@ function notifyLoginStatusChanged(service) {
     service.loginStatusObservers.forEach(callback => callback(service.isUserLoggedIn()));
 }
 
-export default new AuthenticationService();
+export default new AuthenticationHandler();

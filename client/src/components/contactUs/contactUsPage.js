@@ -11,7 +11,7 @@ const ContactUsPage = props => {
     
 
     return (
-            <div className="container">
+            <div id="contactus" className="container">
                 <div className="header">
                     <h2>Contact Us</h2>
                 </div>

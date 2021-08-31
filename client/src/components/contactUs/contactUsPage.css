@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+#contactus {
+    height: 800px;
+}
+
 input[type=text], select, textarea {
     font-family: 'Segoe UI';
     font-weight: lighter;
@@ -47,6 +51,7 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+    margin-top: 40px;
 }
 
 .image-container {
@@ -61,5 +66,6 @@ input[type=submit]:hover {
     }
 }
 h2 {
+    margin-top: 30px;
     width: 92%;
 }
