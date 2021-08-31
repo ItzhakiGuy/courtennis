@@ -3,9 +3,14 @@ import './contactUsPage.css';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 
-class ContactUsPage extends React.Component {
-    render() {
-        return (
+const ContactUsPage = props => {
+
+    async function submitForm() {
+        props.history.push("/feedback");
+    };
+    
+
+    return (
             <div className="container">
                 <div className="header">
                     <h2>Contact Us</h2>
@@ -25,13 +30,12 @@ class ContactUsPage extends React.Component {
                                 Comment:
                                 <input type="text" name="share" placeholder="Comment"/>
                             </FormLabel>
-                            <input type="submit" value="Submit"/>
+                            <input type="submit" value="Submit" onClick={submitForm} />
                         </FormGroup>
                     </div>
                 </div>
             </div>
         )
-    }
 }
 
 export default ContactUsPage;

@@ -17,6 +17,7 @@ class SearchItemInStore extends Component {
                                onChange={onChange} />
                     
                 </div>
+
                 <Fab id="cartCount" variant="extended" className="cart-items-container">
                     {cartCount} Items in your cart
                 </Fab>
