@@ -17,10 +17,11 @@ class SearchItemInStore extends Component {
                                onChange={onChange} />
                     
                 </div>
-                <Fab variant="extended" className="cart-items-container" disableFocusRipple>
+
+                <Fab id="cartCount" variant="extended" className="cart-items-container">
                     {cartCount} Items in your cart
                 </Fab>
-                <Button variant="contained" color="primary" disableElevation onClick={onClearCart}>
+                <Button id= "emptyCart" variant="contained" color="primary" disableElevation onClick={onClearCart}>
                     <RemoveShoppingCartIcon /> Empty Cart
                 </Button>
             </div>

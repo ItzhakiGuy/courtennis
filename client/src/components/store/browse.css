@@ -83,3 +83,17 @@
 	align-self: flex-end;
 	padding-left: 900px;
 }
+
+#emptyCart{
+	margin-left: 30px;
+	background-color: red;
+	margin-right: 10px;
+
+}
+
+#cartCount{
+	background-color: #d5d229;
+	margin-right: 10px;
+	font-size: medium;
+
+}

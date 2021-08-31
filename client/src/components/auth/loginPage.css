@@ -43,7 +43,7 @@ input {
 .signUp {
 	font-family: 'Segoe UI';
 	font-weight: lighter;
-	background-color: #c8e2d3;
+	background-color: rgba(168,187,175,0.96);
 	padding: 60px 0;
 }
 
@@ -54,32 +54,25 @@ input {
 	padding: 60px 0;
 }
 
-.signup-button {
+.register-button {
 	font-family: 'Segoe UI';
 	font-weight: lighter;
-	background-color: #e4f5f5;
+	background-color: #40cdcd;
 }
 
-.login-button {
-	background-color: #e4f5f5;
-}
-
-.signup-cancel {
+.register-cancel {
 	font-family: 'Segoe UI';
 	font-weight: lighter;
-	background-color: #e4f5f5;
+	background-color: #e35454;
 }
 
-.signup-button:hover {
-	background-color: #b2f7e9;
+.register-button:hover {
+	background-color: #1a957e;
 }
 
-.login-button:hover {
-	background-color: #b2f7e9;
-}
 
-.signup-cancel:hover {
-	background-color: #b2f7e9;
+.register-cancel:hover {
+	background-color: #ce1919;
 }
 
 #username, #password {
