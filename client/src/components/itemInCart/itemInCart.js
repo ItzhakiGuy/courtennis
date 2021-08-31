@@ -1,5 +1,6 @@
 import React  from "react";
 import "./itemInCart.css";
+import { Button } from "@material-ui/core";
 
 const ItemInCart = props => {
 
@@ -19,7 +20,7 @@ const ItemInCart = props => {
                         min="1" max="50" defaultValue={props.quantity} onKeyDown={(event) => event.preventDefault()}
                         onChange={event => props.onHandleQuantityChange(event, props.name)} />
                 </div>
-                <button className={"remove-from-cart-button"} onClick={event => props.onRemoveButtonClick(event, props.name)}>Remove from Cart</button>
+                <Button variant="contained" className={"remove-from-cart-button"} onClick={event => props.onRemoveButtonClick(event, props.name)}>Remove from Cart</Button>
             </div>
 
         </div>
