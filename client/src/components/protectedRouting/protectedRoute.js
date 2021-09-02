@@ -1,33 +1,21 @@
 import React from "react";
 import {Route, Redirect} from "react-router-dom";
-import authenticationService from "../handlers/AuthenticationService.js";
+import authenticationService from "../handlers/AuthenticationHandler.js";
 
-const ProtectedRoute = ({
-    component: Component,
-    ...rest
-}) => {
-    return (
-        <Route
-            {...rest}
+const ProtectedRoute = ({component: Component, ...args}) => {
+    return (<Route
+            {...args}
             render={props => {
                 if (authenticationService.isUserLoggedIn()) {
                     return <Component {...props} />;
                 } else {
-                    alert("You need to be logged in to do that");
                     return (
-                        <Redirect
-                            to={{
-                                pathname: "/login",
-                                state: {
-                                    from: props.location
-                                }
-                            }}
-                        />
+                        <Redirect to={{pathname: "/login"}}/>
                     );
                 }
             }}
         />
     );
-};
+}
 
 export default ProtectedRoute;

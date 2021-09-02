@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './loginPage.css';
-import authenticationService from "../handlers/AuthenticationService";
+import authenticationService from "../handlers/AuthenticationHandler";
 import Button from '@material-ui/core/Button';
 
 const LoginPage = props => {

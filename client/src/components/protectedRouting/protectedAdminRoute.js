@@ -1,13 +1,9 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import authenticationService from "../handlers/AuthenticationService";
+import authenticationService from "../handlers/AuthenticationHandler";
 
-const ProtectedAdminRoute = ({
-    component: Component,
-    ...rest
-}) => {
-    return (
-        <Route
+const ProtectedAdminRoute = ({component: Component, ...rest}) => {
+    return (<Route
             {...rest}
             render={props => {
                 if (authenticationService.isUserLoggedIn() && authenticationService.isUserAdmin()) {
@@ -19,8 +15,7 @@ const ProtectedAdminRoute = ({
                             to={{
                                 pathname: "/",
                                 state: {
-                                    from: props.location
-                                }
+                                    from: props.location}
                             }}
                         />
                     );

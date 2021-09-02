@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import "./navbar.css"
-import authenticationService from "../handlers/AuthenticationService.js";
+import authenticationService from "../handlers/AuthenticationHandler.js";
 import {useHistory} from "react-router-dom";
 import ShoppingCartTwoToneIcon from '@material-ui/icons/ShoppingCartTwoTone';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
