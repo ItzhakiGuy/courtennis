@@ -6,41 +6,34 @@ We also have an admin tab, designated for seeing the users in the store.
 
 ## :desktop_computer: Running the project: 
 ### Running the Backend:
-* Go to server root:
+* Go to server root:<br />
 `cd courtennis/server/`
 
-* * if this is the first time running, run:
+* * if this is the first time running, run:<br />
 `npm install`
 
-* then run:
+* then run:<br />
 `npm start`
-
-
-The server communicate with the Frontend at:
-`http://localhost:9000/`
 
 ### Running the Frontend:
-* Go to client root:
+* Go to client root:<br />
 `cd courtennis/client/`
-* * if this is the first time running, run:
+* * if this is the first time running, run:<br />
 `npm install`
 
-* then run:
+* then run:<br />
 `npm start`
 
-### Running both together (Frontend + Backend, after installing them), From the main project directory, run:
-`npm run dev`
-
-The client communicate with the Backend at:
+# The client communicate with the server at: <br />
 `http://localhost:9000/`
 
-The client runs at:
+# The client runs at: <br />
 `http://localhost:3000/`
 
 ### Running project tests:
-* The tests reside in a tests folder under the Backend directory (using concurrently).
+* The tests reside in a tests folder under the Backend directory (using concurrently).<br />
 `cd courtennis/server/`
-* run:
+* run:<br />
 `npm test`
 
 
