@@ -29,7 +29,9 @@ html {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 28px 8px 8px 28px;
 }
-
+p.desc{
+	font-size: 24px;
+}
 .background {
 	background-color: white;
 }
@@ -49,7 +51,7 @@ html {
 	background-color: #64916e4b;
 }
 
-.team-container {
+.squad-container {
 	background-color: rgba(221, 224, 224, 0.7);
 	justify-content: space-around;
 }
@@ -70,7 +72,7 @@ html {
 	color: grey;
 }
 
-.description {
+.desc {
 	font-family: 'Segoe UI';
 	font-weight: bolder;
 	color: black;
@@ -95,6 +97,7 @@ html {
 	}
 }
 
-.about-section h2 {
+.about-us h2 {
 	text-align: center;
+	font-size: 34px;
 }
