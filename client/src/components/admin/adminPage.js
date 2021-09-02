@@ -23,16 +23,14 @@ class AdminPage extends React.Component {
                     alert(error.response.data);
                     return;
                 } else {
-                    alert("something went wrong....")
+                    alert("error please try again")
                 }
             });
     };
 
     render() {
-        return (
-            <div className='admin-container'>
+        return (<div className='admin-container'>
                 <h2>Admin Page</h2>
-
                 <table className="table">
                     <thead>
                         <tr className="red">
@@ -47,7 +45,6 @@ class AdminPage extends React.Component {
                         ))}
                     </tbody>
                 </table>
-
             </div>
         );
     }
