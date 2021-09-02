@@ -31,7 +31,6 @@
 }
 
 .product img {
-  max-width: 20px;
   max-height: 20rem;
   object-fit: scale-down;
 }
