@@ -20,10 +20,11 @@ class Browse extends React.Component {
 
     componentDidMount() {
         axios.get("/products").then(res => {
+            const filteringTestProducts = res.data.filter(product => product.name !== "testProduct")
             this.setState({
-                products: res.data,
-                filteredProducts: res.data,
-                searchCount: res.data.length
+                products: filteringTestProducts,
+                filteredProducts: filteringTestProducts,
+                searchCount: filteringTestProducts.length
             })
         })
     }

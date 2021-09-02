@@ -12,17 +12,17 @@ export const register = (req, res) => {
                     newUser.password = hash
                     User.create(newUser)
                         .then(() => {
-                            res.json({status: newUser.username + ' registered!'})
+                            res.json({status: 200, success: true, message: `${newUser.username} registered`})
                         })
                         .catch(err => {
-                            res.send('error: ' + err)
+                            res.json({success: false, message: 'error: ' + err})
                         })
                 })
             } else {
-                res.json({error: ' user already exists'})
+                res.json({success: false, error: ' user already exists'})
             }
         })
         .catch(err => {
-            res.send('error: ' + err)
+            res.send({success: false, error: 'error: ' + err})
         })
 }

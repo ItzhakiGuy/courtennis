@@ -7,7 +7,7 @@ export const getAllProducts = async (req, res) => {
                 console.log(err)
             }
             else{
-                res.send(products);
+                res.send(products.filter(product => product.name !== "testProduct"));
             }
         });
     }
@@ -20,17 +20,17 @@ export const getAllProducts = async (req, res) => {
 export const addProduct = async (req, res) => {
     const newProduct = new Product({ name: req.body.name, price: req.body.price, image: req.body.image });
     try{
-        await Product.create(newProduct, (err, product) => {
+        await Product.create(newProduct, (err) => {
             if(err){
-                console.log(err)
+                res.json({success: false, message: `${err}`});
             }
             else{
-                res.send(product.name + " was created successfully")
+                res.json({status: '200', success: true, message: `The new product was created successfully!!`});
             }
         });
     }
     catch (err) {
-        console.log(err);
+        res.json({success: false, message: `${err}`});
     }
 }
 
