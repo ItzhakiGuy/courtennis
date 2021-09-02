@@ -7,10 +7,8 @@ import { addProduct } from "../controllers/products.js";
 
 const router  = express.Router();
 
-//INDEX page
 router.get('/products', getAllProducts);
 
-//Add product page
 //This route is for internal use, and is not showed in the website UI!!
 router.post('/products/new', addProduct);
 

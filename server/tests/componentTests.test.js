@@ -1,5 +1,5 @@
 const fetch = require ('node-fetch');
-const port = 9000;
+const port = 9000 || process.env.PORT;
 const baseRoute = `http://localhost:${port}`;
 
 test('loginHappyFlow - expect success=true',  async () => {

@@ -23,6 +23,6 @@ export const register = (req, res) => {
             }
         })
         .catch(err => {
-            res.send({success: false, error: 'error: ' + err})
+            res.json({success: false, error: 'error: ' + err})
         })
 }
