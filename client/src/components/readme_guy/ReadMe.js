@@ -49,17 +49,31 @@ const ReadMe = props => {
 
             <h3>Specify all the different routes your app supports</h3>
             <p>
-                GET routes: <br/>
+                Backend GET routes: <br/>
+                <ol>
+                    <li>Get All Products - /products</li>
+                    <li>Get All Users - /users</li>
+
+                </ol>
+                Backend POST routes:
                 <ol>
                     <li>Login - /Login</li>
-                    <li>Logout - /logout</li>
-                    <li>Admin - /admin/users</li>
+                    <li>Register - /register</li>
+                    <li>Add new product (internal route) - /products/new</li>
                 </ol>
-                POST routes:
+                React routes: <br/>
                 <ol>
-                    <li>Sign Up - /register</li>
                     <li>Login - /login</li>
-                    <li>Purchase - /purchase</li>
+                    <li>Register - /register</li>
+                    <li>Admin - /Admin</li>
+                    <li>Browse - /</li>
+                    <li>Checkout - /checkout</li>
+                    <li>Cart - /cart</li>
+                    <li>About us - /aboutus</li>
+                    <li>Thank you page - /thankYou</li>
+                    <li>Contactus - /contactus</li>
+                    <li>Feedback - /feedback</li>
+                    <li>Readme - /readme.html</li>
                 </ol>
             </p>
         </div>
