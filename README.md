@@ -24,10 +24,10 @@ We also have an admin tab, designated for seeing the users in the store.
 * then run:<br />
 `npm start`
 
-# The client communicate with the server at: <br />
+### The client communicate with the server at: <br />
 `http://localhost:9000/`
 
-# The client runs at: <br />
+### The client runs at: <br />
 `http://localhost:3000/`
 
 ### Running project tests:
