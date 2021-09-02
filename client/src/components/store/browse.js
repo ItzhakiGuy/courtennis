@@ -1,6 +1,6 @@
 import React from 'react';
 import './browse.css';
-import SearchItemInStore from "../searchBar/searchItemInStore";
+import SearchProduct from "../searchProduct/searchProduct";
 import ProductContainer from "./productContainer";
 import axios from "axios";
 
@@ -10,9 +10,9 @@ class Browse extends React.Component {
         super(props);
         this.state = {
             products: [],
+            searchBy: "",
+            count: 0,
             filteredProducts: [],
-            searchTerm: "",
-            searchCount: 0,
             cartItems: JSON.parse(localStorage.getItem("cartItems")) ?
                 JSON.parse(localStorage.getItem("cartItems")) : []
         };
@@ -76,12 +76,12 @@ class Browse extends React.Component {
                 <main>
                     <div className="content">
                         <div className="main">
-                            <SearchItemInStore count={this.state.searchCount}
-                                               cartCount={this.numOfItems(this.state.cartItems)}
-                                               searchTerm={this.state.searchTerm}
-                                               onChange={this.editSearchTerm}
-                                               onClearCart={this.removeAllFromCart}>
-                            </SearchItemInStore>
+                            <SearchProduct count={this.state.searchCount}
+                                           cartCount={this.numOfItems(this.state.cartItems)}
+                                           searchTerm={this.state.searchTerm}
+                                           onChange={this.editSearchTerm}
+                                           onClearCart={this.removeAllFromCart}>
+                            </SearchProduct>
                             <div className="storeItems">
                                 <ProductContainer cart={this.addItemToCart} remove={this.removeItemFromCart}
                                                   products={this.state.filteredProducts} cartItems={this.state.cartItems}/>

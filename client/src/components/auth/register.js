@@ -1,35 +1,13 @@
 import React, { useState } from "react";
-import "./loginPage.css";
+import "./login.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import authenticationService from "../handlers/AuthenticationHandler";
 
-function SignUpPage() {
+function Register() {
     const [username, setUsername] = useState(null);
     const [password, setPassword] = useState(null);
     const routerHistory = useHistory();
-
-    const handleRegisterButtonClick = async () => {
-        if (!username) {
-            alert("Username is missing");
-            return;
-        } else if (!password) {
-            alert("Password is missing.");
-            return;
-        }
-
-        const signUpResponse = await signUpRequest(username, password);
-        if (signUpResponse.status === 200) {
-            const response = await authenticationService.login(username, password, false);
-            if (authenticationService.isUserLoggedIn()) {
-                routerHistory.push("/");
-            } else {
-                alert(response.message);
-            }
-        } else {
-            alert(signUpResponse.message);
-        }
-    };
 
     const cancelClicked = () => {
         routerHistory.push("/login");
@@ -60,6 +38,29 @@ function SignUpPage() {
         return response;
     };
 
+    const handleRegisterButtonClick = async () => {
+        if (!username) {
+            alert("Username is missing");
+            return;
+        } else if (!password) {
+            alert("Password is missing.");
+            return;
+        }
+
+        const signUpResponse = await signUpRequest(username, password);
+        if (signUpResponse.status === 200) {
+            const response = await authenticationService.login(username, password, false);
+            if (authenticationService.isUserLoggedIn()) {
+                routerHistory.push("/");
+            } else {
+                alert(response.message);
+            }
+        } else {
+            alert(signUpResponse.message);
+        }
+    };
+
+
     return (<div className="signUp">
         <div className="signup-container">
             <h3>Sign Up to Courtennis</h3>
@@ -71,4 +72,4 @@ function SignUpPage() {
     </div>);
 }
 
-export default SignUpPage;
+export default Register;

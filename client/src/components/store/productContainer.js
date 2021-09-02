@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from "../item/item"
+import Product from "../product/product"
 import './browse.css';
   
 class ProductContainer extends React.Component {
@@ -7,9 +7,9 @@ class ProductContainer extends React.Component {
         const { products, cart, remove, cartItems } = this.props;
         return (
             <div className={"product-container-flex"}>
-                {products.map((product, i) => (
-                    <Item addToCart={cart} removeFromCart={remove} products={product}
-                        cartItems={cartItems} />
+                {products.map((product, _) => (
+                    <Product addToCart={cart} removeFromCart={remove} products={product}
+                             cartItems={cartItems} />
                 ))}
             </div>
         );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./cartPage.css";
-import ItemInCart from "../itemInCart/itemInCart";
+import CartProduct from "../cartProduct/cartProduct";
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import { Button } from "@material-ui/core";
 
@@ -39,7 +39,7 @@ const CartPage = props => {
 
         <div className="cart-list-container">
             {cartItems.map((item) => {
-                return <ItemInCart
+                return <CartProduct
                     name={item.name}
                     image={item.image}
                     price={item.price}

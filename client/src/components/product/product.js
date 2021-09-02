@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./item.css";
+import "./product.css";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,11 +8,12 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-export default class Item extends Component {
+export default class Product extends Component {
     
     constructor(props) {
         super(props);
-        this.state = { itemInCart: 0, cartItems: this.props.cartItems };
+        this.state = { itemInCart: 0,
+                        cartItems: this.props.cartItems };
     }
 
     componentWillReceiveProps(nextProps) {
@@ -56,7 +57,7 @@ export default class Item extends Component {
                     </Typography>
                 </CardActions>
               </Card>
-              );
+        );
     }
 };
 

@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
 
 
-class SearchItemInStore extends Component {
+class SearchProduct extends Component {
 
     render() {
         const {searchTerm, onChange, cartCount, onClearCart} = this.props;
@@ -29,4 +29,4 @@ class SearchItemInStore extends Component {
     }
 }
 
-export default SearchItemInStore;
+export default SearchProduct;

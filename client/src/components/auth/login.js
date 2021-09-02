@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './loginPage.css';
+import './login.css';
 import authenticationService from "../handlers/AuthenticationHandler";
 import Button from '@material-ui/core/Button';
 
-const LoginPage = props => {
+const Login = props => {
     const [username, setUsername] = useState(null),
         [password, setPassword] = useState(null),
         [rememberMe, setRememberMe] = useState(false),
@@ -94,4 +94,4 @@ const LoginPage = props => {
 
 }
 
-export default LoginPage;
+export default Login;

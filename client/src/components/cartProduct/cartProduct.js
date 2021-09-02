@@ -1,8 +1,8 @@
 import React  from "react";
-import "./itemInCart.css";
+import "./cartProduct.css";
 import { Button } from "@material-ui/core";
 
-const ItemInCart = props => {
+const CartProduct = props => {
 
     return (
         <div className="cart-item-container">
@@ -28,4 +28,4 @@ const ItemInCart = props => {
 
 }
 
-export default ItemInCart;
+export default CartProduct;

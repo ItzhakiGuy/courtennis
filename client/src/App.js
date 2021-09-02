@@ -3,8 +3,8 @@ import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ProtectedRoute from "./components/protectedRouting/protectedRoute";
 import ProtectedAdminRoute from "./components/protectedRouting/protectedAdminRoute";
-import LoginPage from "./components/auth/loginPage";
-import SignUpPage from "./components/auth/signUpPage";
+import Login from "./components/auth/login";
+import Register from "./components/auth/register";
 import Navbar from "./components/navbar/navbar";
 import Browse from "./components/store/browse";
 import ReadMe from "./components/readme_maor/ReadMe";
@@ -22,8 +22,8 @@ function App() {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route path="/login" component={LoginPage}/>
-            <Route path="/register" component={SignUpPage}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/register" component={Register}/>
             <Route path="/readme.html" component={ReadMe}/>
             <ProtectedAdminRoute path="/admin" component={AdminPage}/>
             <ProtectedRoute path="/thankYou" component={ThankYou}/>
